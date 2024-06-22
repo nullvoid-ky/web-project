@@ -1,4 +1,10 @@
+import { useNavigate } from "react-router-dom";
 export default function Register() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/register");
+  };
   return (
     <div className="flex flex-col justify-center items-center h-full w-full shadow-red-950 bg-red-400 rounded-xl space-y-10 transition ease-in-out duration-200">
       <h1 className=" text-4xl text-white">ยินดีต้อนรับ</h1>
@@ -13,6 +19,7 @@ export default function Register() {
       <button
         className="flex px-6 py-2 text-white shadow-2xl rounded-lg border-white border-[1px] hover:bg-red-500"
         type="button"
+        onClick={handleClick}
       >
         สมัครสมาชิก
       </button>
