@@ -1,6 +1,17 @@
+import { useNavigate } from "react-router-dom";
+
 export default function HomeButtonOverlay() {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
+
   return (
-    <button className="absolute top-4 left-4 rounded-[100%] w-12 h-12 z-10 flex justify-center items-center bg-red-400 hover:bg-red-500">
+    <button
+      className="absolute top-4 left-4 rounded-[100%] w-12 h-12 z-10 flex justify-center items-center bg-red-400 hover:bg-red-500"
+      onClick={handleClick}
+    >
       <svg
         className=" fill-white w-6 h-6 "
         xmlns="http://www.w3.org/2000/svg"
