@@ -17,7 +17,7 @@ export default function Register() {
         </p>
       </p>
       <button
-        className="flex px-6 py-2 text-white shadow-2xl rounded-lg border-white border-[1px] hover:bg-red-500"
+        className="flex px-6 py-2 text-white shadow-2xl rounded-lg border-white border-[1px] hover:bg-red-500 ease-in-out duration-200"
         type="button"
         onClick={handleClick}
       >

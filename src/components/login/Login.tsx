@@ -17,7 +17,7 @@ export default function Login() {
         id=""
       />
       <button
-        className="flex px-6 py-2 text-white shadow-2xl rounded-lg border-white border-[1px] bg-red-500 hover:bg-red-400"
+        className="flex px-6 py-2 text-white shadow-2xl rounded-lg border-white border-[1px] bg-red-500 hover:bg-red-400 ease-in-out duration-200"
         type="submit"
       >
         ล็อคอิน

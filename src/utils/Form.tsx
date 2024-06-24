@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import React, { useRef, useState } from "react";
 
 type FormProps = {
   label: string;
@@ -26,8 +26,27 @@ export default function Form({
   const inputRef = useRef<HTMLInputElement>(null);
   const labelRef = useRef<HTMLLabelElement>(null);
   const pRef = useRef<HTMLParagraphElement>(null);
+  const [isBlurredAndEmpty, setIsBlurredAndEmpty] = useState(false);
+  const [inputValue, setInputValue] = useState("");
+
+  const handleBlur = () => {
+    if (required && inputValue === "") {
+      setIsBlurredAndEmpty(true);
+    } else {
+      setIsBlurredAndEmpty(false);
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+    func(e);
+    if (e.target.value !== "") {
+      setIsBlurredAndEmpty(false);
+    }
+  };
+
   return (
-    <div className="flex flex-col bg-white rounded-xl px-8 pb-4 box-border my-2">
+    <div className={`flex flex-col bg-white rounded-xl px-8 pb-4 my-2 ${isBlurredAndEmpty ? "border border-red-600" : ""}`} style={{ boxSizing: "border-box" }}>
       <label className={labelClass} ref={labelRef}>
         {label}
         {required === true ? (
@@ -54,9 +73,9 @@ export default function Form({
           type={type}
           className={inputClass}
           ref={inputRef}
-          onChange={(e) => {
-            func(e);
-          }}
+          value={inputValue}
+          onChange={handleChange}
+          onBlur={handleBlur}
         />
       )}
     </div>

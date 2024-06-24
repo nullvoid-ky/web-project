@@ -33,6 +33,32 @@ export default function RegisterForm() {
           //   func={(e) => setEmail(e.target.value)}
         />
 
+
+<Form
+          label="รหัสผ่าน"
+          subtext=""
+          type="password"
+          placeholder="คำตอบของคุณ"
+          required={true}
+          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          labelClass="text-stone04 text-[18px] font-[700] mt-8"
+          pClass="my-2 text-[14px] text-slate-500"
+          //   func={(e) => setEmail(e.target.value)}
+        />
+
+
+<Form
+          label="ยืนยันรหัสผ่าน"
+          subtext=""
+          type="password"
+          placeholder="คำตอบของคุณ"
+          required={true}
+          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          labelClass="text-stone04 text-[18px] font-[700] mt-8"
+          pClass="my-2 text-[14px] text-slate-500"
+          //   func={(e) => setEmail(e.target.value)}
+        />
+
         <Form
           label="ชื่อแสดงผล"
           subtext="ชื่อแสดงผลในนามทั่วไป สามารถแก้ไขได้ในภายหลังได้"
@@ -73,13 +99,13 @@ export default function RegisterForm() {
         </button>
         <footer className="flex flex-col h-full mb-8">
           <div className="text-slate-600 w-full h-4 text-[12px] my-4">
-            ห้ามส่งรหัสผ่านใช้งานจริงใน Register Form
+            ห้ามส่งรหัสผ่านใช้งานจริงใน Kanyok Form
           </div>
           <div className="flex justify-center text-slate-600 w-full h-4 text-[12px] my-2">
             เนื้อหานี้มิได้ถูกสร้างขึ้นหรือรับรองโดย Kanyok รายงานการละเมิด -
             ข้อกำหนดในการให้บริการ - นโยบายความเป็นส่วนตัว
           </div>
-          <div className="flex justify-center text-slate-600 w-full h-4 text-[20px] my-1">
+          <div className="flex justify-center text-slate-600 w-full h-4 text-[20px] mt-1 mb-4">
             Kanyok ฟอร์ม
           </div>
         </footer>
