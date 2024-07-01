@@ -1,8 +1,48 @@
 import Form from "../../utils/Form";
+import { useState } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import HomeButtonOverlay from "./HomeButtonOverlay";
+// use State สำหรับเปลี่ยนค่าที่เกิดขึ้นทันทีในเว็บ
+
 export default function RegisterForm() {
+  const [username, setUsername] = useState("");
+  const [displayname, setDisplayName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [repassword, setRePassword] = useState("");
+  const [tel, setTel] = useState("");
+  const [birthdate, setBirthDate] = useState("");
+  const navigate = useNavigate();
+  async function handleSubmit() {
+    try {
+      if (password !== repassword) {
+        alert("รหัสผ่านไม่ตรงกัน");
+        return;
+      }
+      await axios
+        .post("http://localhost:8080/api/auth/register", {
+          displayname: displayname ? displayname : username,
+          username: username,
+          email: email,
+          password: password,
+          tel: tel,
+          birthdate: birthdate,
+        })
+        .then((res) => {
+          console.log(res.data);
+          alert("สมัครสมาชิกสำเร็จ");
+          navigate("/login");
+        });
+    } catch (error) {
+      console.log(error);
+      alert("ไม่สามารถสมัครสมาชิกได้");
+    }
+  }
   return (
     <>
       <div className="flex flex-col h-full w-200  rounded-xl">
+      <HomeButtonOverlay/>
         <div className="h-40 bg-red-600 rounded-xl my-4"></div>
 
         <div className="bg-white rounded-xl mb-2">
@@ -30,11 +70,22 @@ export default function RegisterForm() {
           inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
-          //   func={(e) => setEmail(e.target.value)}
+          func={(e) => setUsername(e.target.value)}
         />
 
+        <Form
+          label="อีเมล"
+          subtext=""
+          type="email"
+          placeholder="คำตอบของคุณ"
+          required={true}
+          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          labelClass="text-stone04 text-[18px] font-[700] mt-8"
+          pClass="my-2 text-[14px] text-slate-500"
+          func={(e) => setEmail(e.target.value)}
+        />
 
-<Form
+        <Form
           label="รหัสผ่าน"
           subtext=""
           type="password"
@@ -43,11 +94,10 @@ export default function RegisterForm() {
           inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
-          //   func={(e) => setEmail(e.target.value)}
+          func={(e) => setPassword(e.target.value)}
         />
 
-
-<Form
+        <Form
           label="ยืนยันรหัสผ่าน"
           subtext=""
           type="password"
@@ -56,7 +106,7 @@ export default function RegisterForm() {
           inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
-          //   func={(e) => setEmail(e.target.value)}
+          func={(e) => setRePassword(e.target.value)}
         />
 
         <Form
@@ -68,19 +118,19 @@ export default function RegisterForm() {
           inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
-          //   func={(e) => setEmail(e.target.value)}
+          func={(e) => setDisplayName(e.target.value)}
         />
 
         <Form
           label="เบอร์มือถือ"
-          //   subtext="เบอร์มือถือที่สามารถติดต่อได้"
+          subtext="อยากแอบขอเบอร์ ไม่ได้ใช้ทำไร อิอิ"
           type="tel"
           placeholder="คำตอบของคุณ"
-          required={true}
+          required={false}
           inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
-          //   func={(e) => setEmail(e.target.value)}
+          func={(e) => setTel(e.target.value)}
         />
 
         <Form
@@ -88,13 +138,16 @@ export default function RegisterForm() {
           //   subtext="ชื่อบัญชีสำหรับการแสดงผลด้วย ไม่สามารถแก้ไขได้แต่สามารถไปแก้ไขชื่อสำหรับการมองเห็นในภายหลังได้"
           type="date"
           placeholder="คำตอบของคุณ"
-          required={true}
+          required={false}
           inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
-          //   func={(e) => setEmail(e.target.value)}
+          func={(e) => setBirthDate(e.target.value)}
         />
-        <button className="bg-red-700 text-white rounded-md p-2 w-[72px] mt-2">
+        <button
+          className="bg-red-700 text-white rounded-md p-2 w-[72px] mt-2"
+          onClick={handleSubmit}
+        >
           ส่ง
         </button>
         <footer className="flex flex-col h-full mb-8">
