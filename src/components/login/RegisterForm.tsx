@@ -2,7 +2,6 @@ import Form from "../../utils/Form";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import HomeButtonOverlay from "./HomeButtonOverlay";
 // use State สำหรับเปลี่ยนค่าที่เกิดขึ้นทันทีในเว็บ
 
 export default function RegisterForm() {
@@ -42,9 +41,7 @@ export default function RegisterForm() {
   return (
     <>
       <div className="flex flex-col h-full w-200  rounded-xl">
-      <HomeButtonOverlay/>
         <div className="h-40 bg-red-600 rounded-xl my-4"></div>
-
         <div className="bg-white rounded-xl mb-2">
           <div className=" rounded-t-lg h-2 w-full bg-red-500"></div>
           <div className="flex flex-col p-8 py-4">
@@ -144,12 +141,17 @@ export default function RegisterForm() {
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setBirthDate(e.target.value)}
         />
-        <button
-          className="bg-red-700 text-white rounded-md p-2 w-[72px] mt-2"
-          onClick={handleSubmit}
-        >
-          ส่ง
-        </button>
+        <div className="flex items-center space-x-4 ">
+          <button className="bg-white shadow-md text-red-700 rounded-md p-2 w-[196px] mt-2">
+            ต้องการเข้าสู่ระบบ ?
+          </button>
+          <button
+            className="bg-red-700 shadow-md text-white rounded-md p-2 w-[72px] mt-2"
+            onClick={handleSubmit}
+          >
+            ส่ง
+          </button>
+        </div>
         <footer className="flex flex-col h-full mb-8">
           <div className="text-slate-600 w-full h-4 text-[12px] my-4">
             ห้ามส่งรหัสผ่านใช้งานจริงใน Kanyok Form

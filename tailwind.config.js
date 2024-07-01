@@ -5,6 +5,7 @@ export default {
     extend: {
       blur: {
         'right': '8px',
+        'bottom': '8px',
       },
       height: {
         100: "25rem",
@@ -47,6 +48,12 @@ export default {
           filter: "blur(0px)",
           "-webkit-mask-image":
             "linear-gradient(to left, transparent 0%, white 100%)",
+            opacity: 0.95
+        },
+        ".blur-bottom": {
+          filter: "blur(0px)",
+          "-webkit-mask-image":
+            "linear-gradient(to top, transparent 0%, white 70%)",
             opacity: 0.95
         },
       };

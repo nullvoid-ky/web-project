@@ -5,16 +5,17 @@ import Footer from "../utils/Footer";
 export default function HomePage() {
   return (
     <div className="">
-      <Nav/>
-      <div className="flex flex-col justify-center pt-32 sm:pt-48 p-2 sm:p-20">
-        <Banner/>
-        <ScrollContent />
-        <ScrollContent />
-        <ScrollContent />
-        <ScrollContent />
+      <Nav />
+      <div className="flex flex-col justify-center pt-12 sm:pt-32 p-0 sm:p-20">
+        <Banner />
+        <div className="flex p-4 flex-col justify-center ">
+          <ScrollContent />
+          <ScrollContent />
+          <ScrollContent />
+          <ScrollContent />
+        </div>
       </div>
       <Footer></Footer>
     </div>
-
   );
 }
