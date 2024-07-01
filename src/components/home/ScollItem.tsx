@@ -1,3 +1,4 @@
+import Topic from "./Topic";
 export default function ScrollItem() {
   return (
     <>
@@ -12,15 +13,9 @@ export default function ScrollItem() {
             Werewolf Ultimate
           </h1>
           <li className="flex flex-row space-x-2 my-1">
-            <ul className="text-xs sm:text-base text-white bg-red-500 px-2 sm:px-4 rounded-xl flex-shrink-0">
-              Tatics
-            </ul>
-            <ul className="text-xs sm:text-base text-white bg-red-500 px-2 sm:px-4 rounded-xl flex-shrink-0">
-              Tatics
-            </ul>
-            <ul className="text-xs sm:text-base text-white bg-red-500 px-2 sm:px-4 rounded-xl flex-shrink-0">
-              Tatics
-            </ul>
+            <Topic text="Multi"/>
+            <Topic text="Survival"/>
+            <Topic text="Psycology"/>
           </li>
           <p className=" text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, ut

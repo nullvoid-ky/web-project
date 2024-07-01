@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      blur: {
+        'right': '8px',
+      },
       height: {
         100: "25rem",
         104: "26rem",
@@ -37,5 +40,17 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".blur-right": {
+          filter: "blur(0px)",
+          "-webkit-mask-image":
+            "linear-gradient(to left, transparent 0%, white 100%)",
+            opacity: 0.95
+        },
+      };
+      addUtilities(newUtilities);
+    },
+  ],
 };
