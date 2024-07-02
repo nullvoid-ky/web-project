@@ -46,7 +46,12 @@ export default function Form({
   };
 
   return (
-    <div className={`flex flex-col bg-white rounded-xl px-8 pb-4 my-2 ${isBlurredAndEmpty ? "border border-red-600" : ""}`} style={{ boxSizing: "border-box" }}>
+    <div
+      className={`flex flex-col bg-white rounded-xl px-8 pb-4 my-2 ${
+        isBlurredAndEmpty ? "border border-red-600" : ""
+      }`}
+      style={{ boxSizing: "border-box" }}
+    >
       <label className={labelClass} ref={labelRef}>
         {label}
         {required === true ? (

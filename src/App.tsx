@@ -7,6 +7,8 @@ import RegisterPage from "./pages/RegisterPage";
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 import "./App.css";
+import BoardgamePage from "./pages/BoardgamePage";
+import RoomPage from "./pages/RoomPage";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -19,6 +21,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/room" element={<RoomPage />} />
+          <Route path="/boardgame" element={<BoardgamePage />} />
         </Routes>
       </BrowserRouter>
       {/* <div>

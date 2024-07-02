@@ -2,6 +2,7 @@ import Form from "../../utils/Form";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 // use State สำหรับเปลี่ยนค่าที่เกิดขึ้นทันทีในเว็บ
 
 export default function RegisterForm() {
@@ -40,10 +41,10 @@ export default function RegisterForm() {
   }
   return (
     <>
-      <div className="flex flex-col h-full w-200  rounded-xl">
-        <div className="h-40 bg-red-600 rounded-xl my-4"></div>
+      <div className="flex flex-col h-full w-4/5 sm:w-200  rounded-xl">
+        <div className="h-20 sm:h-40 bg-orange-600 rounded-xl my-4"></div>
         <div className="bg-white rounded-xl mb-2">
-          <div className=" rounded-t-lg h-2 w-full bg-red-500"></div>
+          <div className=" rounded-t-lg h-2 w-full bg-orange-500"></div>
           <div className="flex flex-col p-8 py-4">
             <header className="text-3xl">สมัครสมาชิก</header>
             <p className="mt-2 text-l text-slate-700">
@@ -54,7 +55,7 @@ export default function RegisterForm() {
               <p>และสามารถใช้งานได้อย่างไม่มีข้อจำกัด !</p>
             </p>
             <hr className=" my-2" />
-            <p className="text-red-700 ">* ระบุว่าเป็นคําถามที่จําเป็น</p>
+            <p className="text-orange-700 ">* ระบุว่าเป็นคําถามที่จําเป็น</p>
           </div>
         </div>
 
@@ -64,7 +65,7 @@ export default function RegisterForm() {
           type="text"
           placeholder="คำตอบของคุณ"
           required={true}
-          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          inputClass="justify-center w-4/5 sm:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setUsername(e.target.value)}
@@ -76,7 +77,7 @@ export default function RegisterForm() {
           type="email"
           placeholder="คำตอบของคุณ"
           required={true}
-          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          inputClass="justify-center w-4/5 sm:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setEmail(e.target.value)}
@@ -88,7 +89,7 @@ export default function RegisterForm() {
           type="password"
           placeholder="คำตอบของคุณ"
           required={true}
-          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          inputClass="justify-center w-4/5 sm:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setPassword(e.target.value)}
@@ -100,7 +101,7 @@ export default function RegisterForm() {
           type="password"
           placeholder="คำตอบของคุณ"
           required={true}
-          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          inputClass="justify-center w-4/5 sm:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setRePassword(e.target.value)}
@@ -112,7 +113,7 @@ export default function RegisterForm() {
           type="text"
           placeholder="คำตอบของคุณ"
           required={false}
-          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          inputClass="justify-center w-4/5 sm:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setDisplayName(e.target.value)}
@@ -124,7 +125,7 @@ export default function RegisterForm() {
           type="tel"
           placeholder="คำตอบของคุณ"
           required={false}
-          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          inputClass="justify-center w-4/5 sm:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setTel(e.target.value)}
@@ -132,35 +133,37 @@ export default function RegisterForm() {
 
         <Form
           label="วันเกิด"
-          //   subtext="ชื่อบัญชีสำหรับการแสดงผลด้วย ไม่สามารถแก้ไขได้แต่สามารถไปแก้ไขชื่อสำหรับการมองเห็นในภายหลังได้"
+          subtext=""
           type="date"
           placeholder="คำตอบของคุณ"
           required={false}
-          inputClass="justify-center w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-red-700 ease-in-out duration-75 "
+          inputClass="justify-center w-4/5 sm:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] text-stone04 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-stone04 text-[18px] font-[700] mt-8"
           pClass="my-2 text-[14px] text-slate-500"
           func={(e) => setBirthDate(e.target.value)}
         />
         <div className="flex items-center space-x-4 ">
-          <button className="bg-white shadow-md text-red-700 rounded-md p-2 w-[196px] mt-2">
-            ต้องการเข้าสู่ระบบ ?
-          </button>
+          <Link to="/login">
+            <button className="bg-white shadow-md text-orange-700 rounded-md p-2 w-[144px] sm:w-[196px] text-xs sm:text-base mt-2 active:bg-slate-200 active:text-orange-800">
+              ต้องการเข้าสู่ระบบ ?
+            </button>
+          </Link>
           <button
-            className="bg-red-700 shadow-md text-white rounded-md p-2 w-[72px] mt-2"
+            className="bg-orange-700 shadow-md text-white rounded-md p-2 w-[100px] sm:w-[144px] text-xs sm:text-base mt-2 active:text-slate-200 active:bg-orange-800"
             onClick={handleSubmit}
           >
-            ส่ง
+            สมัครสมาชิก
           </button>
         </div>
         <footer className="flex flex-col h-full mb-8">
           <div className="text-slate-600 w-full h-4 text-[12px] my-4">
             ห้ามส่งรหัสผ่านใช้งานจริงใน Kanyok Form
           </div>
-          <div className="flex justify-center text-slate-600 w-full h-4 text-[12px] my-2">
+          <div className="flex justify-center text-slate-600 w-full h-4 text-[10px] sm:text-[12px] my-2">
             เนื้อหานี้มิได้ถูกสร้างขึ้นหรือรับรองโดย Kanyok รายงานการละเมิด -
             ข้อกำหนดในการให้บริการ - นโยบายความเป็นส่วนตัว
           </div>
-          <div className="flex justify-center text-slate-600 w-full h-4 text-[20px] mt-1 mb-4">
+          <div className="flex justify-center text-slate-600 w-full h-4 text-[12px] sm:text-[20px] mt-1 mb-1 sm:mb-4">
             Kanyok ฟอร์ม
           </div>
         </footer>
