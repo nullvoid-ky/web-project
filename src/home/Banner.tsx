@@ -2,7 +2,7 @@ export default function Banner() {
   return (
     <>
       <header id="" className="hidden sm:block">
-        <h1 className="text-4xl font-bold text-slate-700 mb-16">Recommend</h1>
+        <h1 className="text-4xl font-bold  mb-16">Recommend</h1>
       </header>
       <div className="flex flex-row w-full h-[calc(40dvh-48px)] sm:h-96 sm:rounded-md sm:mb-32 bg-[url('https://i.ebayimg.com/images/g/hrsAAOSwQhNlbipp/s-l1600.jpg')] bg-center bg-cover shadow-md">
         <div className="flex w-full bg-orange-50 blur-bottom sm:blur-right  sm:rounded-md"></div>

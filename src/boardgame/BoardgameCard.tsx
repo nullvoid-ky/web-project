@@ -8,7 +8,7 @@ export default function BoardgameCard() {
       </div>
 
       <div className="flex flex-col py-2 box rounded-lg px-4">
-        <h1 className="text-sm sm:text-2xl text-slate-700">
+        <h1 className="text-sm sm:text-2xl ">
           Werewolf Ultimate
         </h1>
 

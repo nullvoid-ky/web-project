@@ -25,7 +25,7 @@ export default function Nav() {
           <div className="flex lg:hidden py-1">
             <Link to="/" className="flex justify-center items-center">
               <img
-                className="min-h-8 max-h-10"
+                className="min-h-4 max-h-10"
                 src="/src/assets/logo-icon-nav.png"
                 alt="logo"
               />

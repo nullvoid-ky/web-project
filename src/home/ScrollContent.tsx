@@ -29,7 +29,7 @@ const ScrollContent: React.FC = () => {
   return (
     <div className="relative">
       <header>
-        <h1 className="text-lg sm:text-4xl font-bold text-slate-700 sm:mb-2">Games</h1>
+        <h1 className="text-lg sm:text-3xl font-bold  sm:mb-2">Games</h1>
       </header>
       <div
         ref={scrollContainerRef}

@@ -10,7 +10,11 @@
 
 }
 .nav-item:hover{
-  transform: perspective(1000px) translateZ(128px) translateX(24px);
+  transform: perspective(1000px) translateZ(12px) translateX(24px);
   text-decoration: underline;
   transition: .6s;
+}
+
+@media (max-width: 768px) {
+  
 }

@@ -1,5 +1,5 @@
-import RegisterForm from "../login/RegisterForm";
 import HomeButtonOverlay from "../login/HomeButtonOverlay";
+import RegisterForm from "../login/RegisterForm";
 export default function RegisterPage() {
   return (
     <>

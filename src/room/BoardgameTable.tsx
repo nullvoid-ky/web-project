@@ -44,7 +44,7 @@ export default function BoardgameTable({
         </div>
       </div>
       <div className="z-10">
-        <span className="">T{number + 1} <span className={` md:hidden absolute right-4 text-orange-300`}>+</span></span>
+        <span className="">T{number + 1} </span>
         <span
           className={`flex w-full text-xs ${
             number % 6 <= 2 ? "" : "text-red-500"
