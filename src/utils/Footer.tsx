@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <>
-      <footer className="h-48 w-full bg-orange-300 rounded-t-xl flex flex-col justify-center items-center">
+      <footer className=" relative bottom-0 h-48 w-full bg-orange-300 rounded-t-xl flex flex-col justify-center items-center">
       <div className="w-36">
       <img
           src="/src/assets/logo-xl.png"

@@ -1,5 +1,5 @@
 import Background from "../utils/Background";
-import HomeButtonOverlay from "../components/login/HomeButtonOverlay";
+import HomeButtonOverlay from "../login/HomeButtonOverlay";
 export default function ErroorPage() {
   return (
     <>

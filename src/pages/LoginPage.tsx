@@ -1,5 +1,5 @@
-import LoginForm from "../components/login/LoginForm";
-import HomeButtonOverlay from "../components/login/HomeButtonOverlay";
+import LoginForm from "../login/LoginForm";
+import HomeButtonOverlay from "../login/HomeButtonOverlay";
 export default function LoginPage() {
   return (
     <>

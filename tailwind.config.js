@@ -84,6 +84,12 @@ export default {
             "linear-gradient(to top, transparent 0%, white 70%)",
           opacity: 0.95,
         },
+        ".blur-bottom-2": {
+          filter: "blur(2px)",
+          "-webkit-mask-image":
+            "linear-gradient(to top, transparent 80%, white 100%)",
+          opacity: 0.75,
+        },
       };
       addUtilities(newUtilities);
     },

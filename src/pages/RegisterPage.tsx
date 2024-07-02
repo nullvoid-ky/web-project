@@ -1,5 +1,5 @@
-import RegisterForm from "../components/login/RegisterForm";
-import HomeButtonOverlay from "../components/login/HomeButtonOverlay";
+import RegisterForm from "../login/RegisterForm";
+import HomeButtonOverlay from "../login/HomeButtonOverlay";
 export default function RegisterPage() {
   return (
     <>

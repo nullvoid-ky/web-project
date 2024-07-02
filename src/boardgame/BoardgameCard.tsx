@@ -1,4 +1,4 @@
-import Topic from "../components/home/Topic";
+import Topic from "../home/Topic";
 import "./AnimationCard.css";
 export default function BoardgameCard() {
   return (
