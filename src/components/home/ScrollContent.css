@@ -17,7 +17,7 @@
     .list .item:hover{
         z-index: 100;
         transition: .4s;
-        height: 360px;
+        height: 400px;
         border-radius: 8px;
         max-height: 600px;
     }

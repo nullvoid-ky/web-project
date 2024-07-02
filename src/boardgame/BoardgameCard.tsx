@@ -3,7 +3,7 @@ import "./AnimationCard.css";
 export default function BoardgameCard() {
   return (
     <div className="item flex flex-row bg-white rounded-lg p-0 shadow-md">
-      <div className="w-1/2 sm:w-40">
+      <div className="w-32">
         <img className="h-full rounded-lg rounded-r-3xl" src="https://picsum.photos/400/400" alt="" />
       </div>
 

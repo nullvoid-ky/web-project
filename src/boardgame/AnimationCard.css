@@ -12,7 +12,7 @@
         overflow-x: visible;
         transition: .4s;
         z-index: 400;
-        transform: perspective(1000px) translateZ(200px) translateY(-20px);
+        transform: perspective(1000px) translateZ(144px) translateY(-4px);
     }
     
     /* .item:hover{

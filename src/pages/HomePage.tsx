@@ -9,7 +9,7 @@ export default function HomePage() {
       <div className="">
         <Background></Background>
         <Nav />
-        <div className="flex flex-col justify-center pt-12 sm:pt-32 p-0 sm:p-20 ">
+        <div className="flex flex-col justify-center pt-20 sm:pt-36  p-0 sm:p-20 ">
           <Banner />
           <div className="flex p-4 flex-col justify-center sm:-space-y-40">
             <ScrollContent />

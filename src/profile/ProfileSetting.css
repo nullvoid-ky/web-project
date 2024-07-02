@@ -1,0 +1,16 @@
+
+
+.nav-item{
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  cursor: pointer;
+  transition: transform 0.6s;
+  transition: .6s;
+  overflow-y: hidden;
+
+}
+.nav-item:hover{
+  transform: perspective(1000px) translateZ(128px) translateX(24px);
+  text-decoration: underline;
+  transition: .6s;
+}
