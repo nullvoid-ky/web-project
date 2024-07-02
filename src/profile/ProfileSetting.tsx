@@ -12,16 +12,19 @@ export default function ProfileSetting() {
   return (
     <>
       <div className="flex flex-col xl:flex-row w-full h-128 bg-orange-100 rounded-lg shadow-lg">
-        <div className="h-12 xl:h-full w-full xl:w-2/5 flex flex-row-reverse  xl:flex-col xl:items-center bg-orange-50 rounded-lg">
-          <div className="flex flex-row-reverse xl:flex-col items-center w-full ">
+        <div className="py-2 xl:py-0 xl:h-full w-full xl:w-2/5 flex flex-row-reverse  xl:flex-col xl:items-center bg-orange-50 rounded-lg">
+          <div className="flex  flex-row-reverse xl:flex-col items-center w-full ">
             <img
               onClick={handlePic}
               className="rounded-full xl:mb-4 max-w-8 xl:max-w-52 mx-4 xl:mx-0 cursor-pointer  xl:mt-8"
               src="https://picsum.photos/200/200"
               alt=""
             />
-            <h1 className="text-sm xl:text-2xl font-bold mb-0 xl:mb-4 ">
+            <h1 className="text-sm xl:text-2xl font-bold mb-0 ">
               Thanatchaya Toom-ariya
+            </h1>
+            <h1 className="text-sm xl:text-lg mb-0 xl:mb-4 mr-4 xl:mr-0">
+              ttoomari
             </h1>
             <hr className="hidden xl:block w-full mb-4" />
           </div>
