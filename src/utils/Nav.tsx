@@ -9,7 +9,7 @@ export default function Nav() {
   }
   return (
     <>
-      <nav className="fixed top-0 flex h-12 w-full bg-midnight-900 z-[1000] lg:px-12 border-b-[0.2px] border-b-pearl-900">
+      <nav className="fixed top-0 flex h-12 w-full bg-midnight-800 z-[1000] lg:px-12 border-b-[1px] border-b-midnight-900 shadow-sm shadow-midnight-900">
         <div className="flex w-2/5">
           <div className="hidden lg:flex py-1 ml-4">
             <Link to="/" className="flex justify-center items-center">

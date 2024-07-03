@@ -36,7 +36,7 @@ const ScrollContent = ({Category} : ContentType) => {
   } as React.CSSProperties;
 
   return (
-    <div className="relative main bg-[#2E2E2E88] p-8 shadow-md shadow-midnight-500">
+    <div className="relative main bg-[#1F1F1FCC] p-8 shadow-md shadow-midnight-500 rounded-lg">
       <header className="header">
         <h1 
         style={dynamicStyles}

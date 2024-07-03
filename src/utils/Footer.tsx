@@ -1,14 +1,14 @@
 export default function Footer() {
   return (
     <>
-      <footer className=" relative bottom-0 h-48 w-full bg-orange-300 rounded-t-xl flex flex-col justify-center items-center">
+      <footer className=" relative bottom-0 h-48 w-full bg-midnight-200 rounded-t-xl flex flex-col justify-center items-center">
       <div className="w-36">
       <img
           src="/src/assets/logo-xl.png"
           alt=""
         />
       </div>
-        <div className="flex flex-row justify-center space-x-2 text-lg text-slate-800">
+        <div className="flex flex-row justify-center space-x-2 text-lg text-pearl-50">
             <a 
                 className="w-8 h-8 bg-white flex items-center justify-center rounded-full"
                 
@@ -38,10 +38,10 @@ export default function Footer() {
               />
             </a>
         </div>
-        <div className=" text-lg text-slate-800">
+        <div className=" text-lg text-pearl-50">
           kanyok boardGame
         </div>
-        <div className=" text-sm text-slate-500">nullvoid-ky</div>
+        <div className=" text-sm text-pearl-800">nullvoid-ky</div>
       </footer>
     </>
   );
