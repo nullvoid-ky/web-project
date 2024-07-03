@@ -11,7 +11,7 @@ export default function HomePage() {
         <Nav />
         <div className=" min-h-screen flex flex-col justify-center pt-12 sm:pt-36  p-0 sm:p-20 ">
           <Banner />
-          <div className="flex p-4 flex-col justify-center sm:-space-y-40">
+          <div className="flex p-4 flex-col justify-center sm:space-y-4">
             <ScrollContent Category="Psychology"/>
             <ScrollContent Category="Hide n Seek"/>
             <ScrollContent Category="Co-operative"/>

@@ -45,7 +45,7 @@ const ScrollContent = ({Category} : ContentType) => {
       </header>
       <div
         ref={scrollContainerRef}
-        className="sm:no-scrollbar flex flex-row w-full h-40 sm:h-128 mb-4 sm:mb-0 py-2 pl-0 sm:pl-0 sm:p-12 overflow-x-scroll rounded-lg list box-border overflow-y-hidden"
+        className="sm:no-scrollbar flex flex-row w-full h-40 sm:h-112 mb-4 sm:mb-0 py-2 pl-0 sm:pl-0 sm:p-12 overflow-x-scroll rounded-lg list box-border overflow-y-hidden"
       >
         {Array.from({ length: 13 }).map((_, index) => (
           <ScrollItem key={index} />

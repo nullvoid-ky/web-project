@@ -2,9 +2,9 @@
 import Topic from "./Topic";
 export default function ScrollItem() {
   return (
-    <div className="item flex-shrink-0 w-40 sm:w-96 h-full sm:h-2/3 max-h-80 bg-white mx-1 sm:mx-4 rounded-lg shadow-md overflow-hidden">
+    <div className="item flex-shrink-0 w-40 sm:w-96 h-80 bg-white mx-1 sm:mx-4 rounded-sm shadow-md overflow-hidden">
       <img
-        className="w-full h-2/3 object-cover rounded-lg"
+        className="w-full h-2/3 object-cover rounded-sm"
         src="https://picsum.photos/200/300"
         alt=""
       />
