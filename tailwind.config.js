@@ -3,6 +3,28 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        "midnight-50" : "#383838",
+        "midnight-100" : "#363636",
+        "midnight-200" : "#333333",
+        "midnight-300" : "#2E2E2E",
+        "midnight-400" : "#2C2C2C",
+        "midnight-500" : "#272727",
+        "midnight-600" : "#252525",
+        "midnight-700" : "#232323",
+        "midnight-800" : "#1E1E1E",
+        "midnight-900" : "#121212",
+        "pearl-50" : "#FAFAFA",
+        "pearl-100" : "#F2F2F2",
+        "pearl-200" : "#EEEEEE",
+        "pearl-300" : "#E0E0E0",
+        "pearl-400" : "#DCDCDC",
+        "pearl-500" : "#CFCFCF",
+        "pearl-600" : "#C2C2C2",
+        "pearl-700" : "#B4B4B4",
+        "pearl-800" : "#A5A5A5",
+        "pearl-900" : "#8C8C8C",
+      },
       keyframes: {
         animate: {
           "0%": {
@@ -18,18 +40,18 @@ export default {
       animation: {
         "linear-1": "animate 2s linear infinite",
         "linear-2": "animate 4s linear infinite",
-        "linear-3": "animate 6s linear infinite",
+        "linear-3": "animate 5s linear infinite",
         "linear-4": "animate 8s linear infinite",
-        "linear-5": "animate 10s linear infinite",
-        "linear-6": "animate 12s linear infinite",
-        "linear-7": "animate 14s linear infinite",
-        "linear-8": "animate 16s linear infinite",
-        "linear-9": "animate 18s linear infinite",
-        "linear-10": "animate 20s linear infinite",
+        "linear-5": "animate 11s linear infinite",
+        "linear-6": "animate 13s linear infinite",
+        "linear-7": "animate 15s linear infinite",
+        "linear-8": "animate 19s linear infinite",
+        "linear-9": "animate 21s linear infinite",
+        "linear-10": "animate 23s linear infinite",
       },
       backgroundColor: {
         linearWallpaper:
-          "linear-gradient(90deg, rgba(2, 0, 0.6, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%)",
+          "linear-gradient(90deg, #1E1E1E 0%, #2E2E2E 35%, #383838 100%)",
       },
       blur: {
         right: "8px",

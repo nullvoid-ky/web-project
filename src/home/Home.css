@@ -1,5 +1,64 @@
 @media (min-width: 640px) {
+
+    .header {
+    position: relative;
+    }
+      
+    .header h1 {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: opacity 0.3s ease, left 0.3s ease;
+    }
+    .header h1::after {
+        content: "> See More";
+        width: 128px;
+        padding-left: 32px;
+        font-size: 16px;
+        position: absolute;
+        right: var(--heading-width); /* X */
+        color: #8C8C8C;
+        top: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease, right 0.3s ease;
+    }
+    
+    .header h1:hover {
+        text-decoration: underline;
+    }
+    .header h1:hover::after {
+        opacity: 1;
+        right: var(--hover-heading-width); /* Y */
+    }
+    /* .main:hover .header h1::after {
+        content: ">";
+        width: 128px;
+        padding-left: 42px;
+        font-size: 16px;
+        position: absolute;
+        right: var(--hover-heading-width); 
+        color: #8C8C8C;
+        top: 0;
+        opacity: 1;
+        transition: opacity 0.3s ease, right 0.3s ease;
+    }
+    
+    .main .header h1::after {
+        content: ">";
+        width: 128px;
+        padding-left: 40px;
+        font-size: 16px;
+        position: absolute;
+        right: var(--heading-width); 
+        color: #8C8C8C;
+        top: 0;
+        opacity: 1;
+        transition: opacity 0.3s ease, right 0.3s ease;
+    } */
+    
+
     .list .item{
+        z-index: 102;
         transform-style: preserve-3d;
         transform: perspective(1000px);
         cursor: pointer;
@@ -10,29 +69,47 @@
     }
     .list .item:hover{
         overflow-y: visible;
-        transition: .4s;
         transform: perspective(1000px) translateZ(40px) translateY(-38px);
+        transition-delay: .12s;
     }
     
+    .bigger{
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        cursor: pointer;
+        transition: transform 0.3s;
+        transition: .3;
+        overflow-y: hidden;
+    
+    }
+    .bigger:hover{
+        overflow-y: visible;
+        transition: .2;
+        transform: perspective(1000px) translateZ(40px) ;
+    }
     .list .item:hover{
-        z-index: 100;
+        z-index: 102;
         transition: .4s;
         height: 400px;
         border-radius: 8px;
+        transition-delay: .12s;
         max-height: 600px;
     }
     
-    .list .item .box p {
+    .list .item .box p {       
+        z-index: 102;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.2s ease-in-out 1s, visibility .2s; /* visibility delay is 2.6s (2s + 0.6s) */
+        transition: opacity 0.2s ease-in-out .6s, visibility .1s; /* visibility delay is 2.6s (2s + 0.6s) */
     
     }
     
     .list .item:hover .box p {
+        z-index: 102;
         opacity: 1;
         visibility: visible;
-        transition: opacity 0.4s 0.2s; /* transition opacity with a delay of 2s */
+        transition: opacity 1.4s 0.05s; /* transition opacity with a delay of 2s */
+        transition-delay: .1s;
     }
     
       

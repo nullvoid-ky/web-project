@@ -1,8 +1,12 @@
 import React, { useRef, useState, useEffect } from 'react';
-import "./ScrollContent.css";
+import "./Home.css";
 import ScrollItem from './ScollItem';
 
-const ScrollContent: React.FC = () => {
+type ContentType = {
+  Category : string
+}
+
+const ScrollContent = ({Category} : ContentType) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [scrollingLeft, setScrollingLeft] = useState(false);
   const [scrollingRight, setScrollingRight] = useState(false);
@@ -14,22 +18,30 @@ const ScrollContent: React.FC = () => {
         if (scrollContainerRef.current) {
           scrollContainerRef.current.scrollBy({ left: -420, behavior: 'smooth' });
         }
-      }, 80); // Adjust the speed by changing the interval time
+      }, 80);
     }
     if (scrollingRight) {
       scrollInterval = setInterval(() => {
         if (scrollContainerRef.current) {
           scrollContainerRef.current.scrollBy({ left: 420, behavior: 'smooth' });
         }
-      }, 80); // Adjust the speed by changing the interval time
+      }, 80);
     }
     return () => clearInterval(scrollInterval);
   }, [scrollingLeft, scrollingRight]);
 
+  const dynamicStyles = {
+    '--heading-width': `-${96}px`, // X
+    '--hover-heading-width': `-${112}px`, // Y
+  } as React.CSSProperties;
+
   return (
-    <div className="relative">
-      <header>
-        <h1 className="text-lg sm:text-3xl font-bold  sm:mb-2">Games</h1>
+    <div className="relative main  ">
+      <header className="header">
+        <h1 
+        style={dynamicStyles}
+        className={`text-lg sm:text-3xl font-bold sm:-mb-2 text-pearl-50
+        `}>{Category}</h1>
       </header>
       <div
         ref={scrollContainerRef}

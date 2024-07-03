@@ -12,10 +12,10 @@ export default function HomePage() {
         <div className=" min-h-screen flex flex-col justify-center pt-12 sm:pt-36  p-0 sm:p-20 ">
           <Banner />
           <div className="flex p-4 flex-col justify-center sm:-space-y-40">
-            <ScrollContent />
-            <ScrollContent />
-            <ScrollContent />
-            <ScrollContent />
+            <ScrollContent Category="Psychology"/>
+            <ScrollContent Category="Hide n Seek"/>
+            <ScrollContent Category="Co-operative"/>
+            <ScrollContent Category="Mind Game"/>
           </div>
         </div>
         <Footer></Footer>
