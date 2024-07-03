@@ -121,7 +121,7 @@
         position: absolute;
         background: rgba(255, 255, 255, 0.85);
         z-index: 400;
-        top: 200px;
+        top: 264px;
         height: 32px;
         padding-bottom: 3px;
         padding-right: 3px;
@@ -141,11 +141,11 @@
     }
     
     .scroll-button.left-0 {
-        left: 0;
+        left: 24px;
     }
     
     .scroll-button.right-0 {
-        right: 0;
+        right: 24px;
     }
     
     /* 
