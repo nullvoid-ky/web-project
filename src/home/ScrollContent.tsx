@@ -48,7 +48,7 @@ const ScrollContent = ({Category} : ContentType) => {
         className="sm:no-scrollbar flex flex-row w-full h-40 sm:h-112 mb-4 sm:mb-0 py-2 pl-0 sm:pl-0 sm:p-12 overflow-x-scroll rounded-lg list box-border overflow-y-hidden"
       >
         {Array.from({ length: 13 }).map((_, index) => (
-          <ScrollItem key={index} />
+          <ScrollItem key={index} name={"Werewolf Ultimate"} picUrl={"https://picsum.photos/200/300"} short={"lorem"} topic={""} />
         ))}
       </div>
       <button
