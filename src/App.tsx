@@ -10,6 +10,7 @@ import "./App.css";
 import BoardgamePage from "./pages/BoardgamePage";
 import RoomPage from "./pages/RoomPage";
 import ProfilePage from "./pages/ProfilePage";
+import InsideGamePage from "./pages/InsideGamePage";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/room" element={<RoomPage />} />
           <Route path="/boardgame" element={<BoardgamePage />} />
+          <Route path="/boardgame/1" element={<InsideGamePage />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>
       </BrowserRouter>

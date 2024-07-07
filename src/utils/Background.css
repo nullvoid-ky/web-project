@@ -1,3 +1,18 @@
 .linear{
- background: linear-gradient(360deg, #1E1E1E 0%, #2E2E2E 75%, #383838 100%);
+ background: linear-gradient(360deg, #25252E 0%, #2E2E38 75%, #383850 100%);
 }
+
+/* 
+colors: {
+    "midnight-50": "#383850",
+    "midnight-100": "#363648",
+    "midnight-200": "#333344",
+    "midnight-300": "#2E2E38",
+    "midnight-400": "#2C2C36",
+    "midnight-500": "#272733",
+    "midnight-600": "#25252E",
+    "midnight-700": "#23232C",
+    "midnight-800": "#1E1E27",
+    "midnight-900": "#121225", 
+    
+    */

@@ -4,26 +4,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        "midnight-50" : "#383838",
-        "midnight-100" : "#363636",
-        "midnight-200" : "#333333",
-        "midnight-300" : "#2E2E2E",
-        "midnight-400" : "#2C2C2C",
-        "midnight-500" : "#272727",
-        "midnight-600" : "#252525",
-        "midnight-700" : "#232323",
-        "midnight-800" : "#1E1E1E",
-        "midnight-900" : "#121212",
-        "pearl-50" : "#FAFAFA",
-        "pearl-100" : "#F2F2F2",
-        "pearl-200" : "#EEEEEE",
-        "pearl-300" : "#E0E0E0",
-        "pearl-400" : "#DCDCDC",
-        "pearl-500" : "#CFCFCF",
-        "pearl-600" : "#C2C2C2",
-        "pearl-700" : "#B4B4B4",
-        "pearl-800" : "#A5A5A5",
-        "pearl-900" : "#8C8C8C",
+        "midnight-50": "#383850",
+        "midnight-100": "#363648",
+        "midnight-200": "#333344",
+        "midnight-300": "#2E2E38",
+        "midnight-400": "#2C2C36",
+        "midnight-500": "#272733",
+        "midnight-600": "#25252E",
+        "midnight-700": "#23232C",
+        "midnight-800": "#1E1E27",
+        "midnight-900": "#121225",
+
+        "pearl-50": "#FAFAFA",
+        "pearl-100": "#F2F2F2",
+        "pearl-200": "#EEEEEE",
+        "pearl-300": "#E0E0E0",
+        "pearl-400": "#DCDCDC",
+        "pearl-500": "#CFCFCF",
+        "pearl-600": "#C2C2C2",
+        "pearl-700": "#B4B4B4",
+        "pearl-800": "#A5A5A5",
+        "pearl-900": "#8C8C8C",
       },
       keyframes: {
         animate: {
@@ -51,7 +52,7 @@ export default {
       },
       backgroundColor: {
         linearWallpaper:
-          "linear-gradient(90deg, #1E1E1E 0%, #2E2E2E 35%, #383838 100%)",
+          "linear-gradient(90deg, #1E1E27 0%, #2E2E2E 35%, #383850 100%)",
       },
       blur: {
         right: "8px",
@@ -99,6 +100,16 @@ export default {
           "-webkit-mask-image":
             "linear-gradient(to left, transparent 0%, white 100%)",
           opacity: 0.95,
+        },
+        ".blur-right-2": {
+          filter: "blur(0px)",
+          "-webkit-mask-image":
+            "linear-gradient(225deg , transparent 0%, #121225 100%)",
+        },
+        ".blur-right-4": {
+          filter: "blur(0px)",
+          "-webkit-mask-image":
+            "linear-gradient(240deg ,transparent 20%, #1f1fff22 30%, #000033 100%)",
         },
         ".blur-bottom": {
           filter: "blur(0px)",

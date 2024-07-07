@@ -11,8 +11,7 @@
     .item:hover{
         overflow-x: visible;
         transition: .4s;
-        z-index: 400;
-        transform: perspective(1000px) translateZ(144px) translateY(-4px);
+        transform: perspective(1000px) translateZ(px) translateY(-4px);
     }
     
     /* .item:hover{

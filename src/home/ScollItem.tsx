@@ -1,5 +1,5 @@
 "https://picsum.photos/200/300"
-import Topic from "./Topic";
+import Topic from "../utils/Topic";
 type ScrollItemType = {
   name: string
   picUrl: string
@@ -8,7 +8,7 @@ type ScrollItemType = {
 }
 export default function ScrollItem({name,picUrl,topic,short} : ScrollItemType) {
   return (
-    <div className="item flex-shrink-0 w-40 sm:w-96 sm:h-80 bg-midnight-800 mx-1 sm:mx-3 rounded-sm shadow-md shadow-midnight-900 overflow-hidden">
+    <div className="item flex-shrink-0 w-40 sm:w-96 sm:h-80 bg-midnight-700 mx-1 sm:mx-3 rounded-sm shadow-md shadow-midnight-900 overflow-hidden">
       <img
         className="w-full h-2/3 object-cover rounded-sm"
         src={picUrl}
