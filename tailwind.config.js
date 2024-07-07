@@ -98,8 +98,7 @@ export default {
         ".blur-right": {
           filter: "blur(0px)",
           "-webkit-mask-image":
-            "linear-gradient(to left, transparent 0%, white 100%)",
-          opacity: 0.95,
+            "linear-gradient(to left, transparent 10%, #1f1fff77 30%, #000033 100%)",
         },
         ".blur-right-2": {
           filter: "blur(0px)",

@@ -37,25 +37,25 @@ export default function Nav() {
             <ul className="pointer-events-auto flex flex-row w-full items-center space-x-4 pr-6">
               <Link
                 to="/#"
-                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4"
+                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4 text-pearl-50"
               >
                 Home
               </Link>
               <Link
                 to="/boardgame"
-                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4"
+                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4 text-pearl-50"
               >
                 Boardgames
               </Link>
               <Link
-                to="/room"
-                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4"
+                to="/about"
+                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4 text-pearl-50"
               >
-                Rooms
+                About
               </Link>
               <Link
                 to="/login"
-                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4"
+                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4 text-pearl-50"
               >
                 Login
               </Link>
@@ -63,7 +63,7 @@ export default function Nav() {
           </div>
           <div
             onClick={handleClick}
-            className="flex flex-col bg-transparent w-8 h-8 rounded-md border-white border-[1px] justify-center items-center space-y-1 mr-2 hover:bg-orange-700 cursor-pointer lg:hidden"
+            className="flex flex-col bg-transparent w-8 h-8 rounded-md border-white border-[1px] justify-center items-center space-y-1 mr-2 hover:bg-midnight-900 cursor-pointer lg:hidden"
           >
             <div className="w-4 h-[2px] bg-white rounded-full "></div>
             <div className="w-4 h-[2px] bg-white rounded-full "></div>
@@ -75,42 +75,42 @@ export default function Nav() {
       {isClicked && (
         <div
           onClick={handleClick}
-          className="fixed inset-0 z-30 bg-[#00000055] lg:hidden "
+          className="fixed inset-0 z-[490] bg-[#00000055] lg:hidden "
         ></div>
       )}
 
-      <div className="fixed inset-0 z-40 flex flex-col justify-end pointer-events-none lg:hidden">
+      <div className="fixed inset-0 z-[500] flex flex-col justify-end pointer-events-none lg:hidden">
         <div
-          className={` pointer-events-auto flex flex-col bg-white w-full h-3/5 rounded-t-lg transition-transform duration-300 ease-in-out transform ${
+          className={` pointer-events-auto flex flex-col bg-midnight-600 shadow-2xl  w-full h-4/5 rounded-t-xl transition-transform duration-300 ease-in-out transform ${
             isClicked ? "translate-y-0" : "translate-y-full"
           }`}
         >
-          <ul className=" flex flex-col w-full items-center  pt-6 ">
-            <Link to="/" className="flex w-full justify-center box-border p-4">
+          <ul className=" flex flex-col w-full items-center  pt-6 h-full  ">
+            <Link to="/" className="flex w-full justify-center box-border p-4 text-pearl-50">
               Home
             </Link>
-            <hr className="w-5/6" />
+            <hr className="w-5/6  border-midnight-200" />
             <Link
-              to="boardgames"
-              className="flex w-full justify-center box-border p-4"
+              to="boardgame"
+              className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
-              Boardgames
+              Boardgame 
             </Link>
-            <hr className="w-5/6" />
+            <hr className="w-5/6  border-midnight-200" />
             <Link
-              to="room"
-              className="flex w-full justify-center box-border p-4"
+              to="about"
+              className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
-              Rooms
+              Abouts
             </Link>
-            <hr className="w-5/6" />
+            <hr className="w-5/6  border-midnight-200" />
             <Link
               to="login"
-              className="flex w-full justify-center box-border p-4"
+              className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
               Login
             </Link>
-            <hr className="w-5/6" />
+            <hr className="w-5/6  border-midnight-200" />
           </ul>
         </div>
       </div>

@@ -1,10 +1,178 @@
 import React, { useRef, useState, useEffect } from "react";
 import "./Home.css";
 import ScrollItem from "./ScollItem";
-
+import Werewolf from "../assets/Boardgames/Werewolf Ultimate/front.png";
+import Survive from "../assets/Boardgames/Survive/front.png";
+import WTK from "../assets/Boardgames/WTK War Of The Three Kingdoms/front.png";
+import DBDL from "../assets/Boardgames/Dead By Daylight/front.png";
+import { Link } from "react-router-dom";
 type ContentType = {
   Category: string;
 };
+const data = [
+  {
+    id: 1,
+    name: "Werewolf Ultimate",
+    picUrl: Werewolf,
+  },
+  {
+    id: 2,
+    name: "Survive",
+    picUrl: Survive,
+  },
+  {
+    id: 3,
+    name: "WTK War Of The Three Kingdoms",
+    picUrl: WTK,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },{
+    id: 1,
+    name: "Werewolf Ultimate",
+    picUrl: Werewolf,
+  },
+  {
+    id: 2,
+    name: "Survive",
+    picUrl: Survive,
+  },
+  {
+    id: 3,
+    name: "WTK War Of The Three Kingdoms",
+    picUrl: WTK,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },{
+    id: 1,
+    name: "Werewolf Ultimate",
+    picUrl: Werewolf,
+  },
+  {
+    id: 2,
+    name: "Survive",
+    picUrl: Survive,
+  },
+  {
+    id: 3,
+    name: "WTK War Of The Three Kingdoms",
+    picUrl: WTK,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },{
+    id: 1,
+    name: "Werewolf Ultimate",
+    picUrl: Werewolf,
+  },
+  {
+    id: 2,
+    name: "Survive",
+    picUrl: Survive,
+  },
+  {
+    id: 3,
+    name: "WTK War Of The Three Kingdoms",
+    picUrl: WTK,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },{
+    id: 1,
+    name: "Werewolf Ultimate",
+    picUrl: Werewolf,
+  },
+  {
+    id: 2,
+    name: "Survive",
+    picUrl: Survive,
+  },
+  {
+    id: 3,
+    name: "WTK War Of The Three Kingdoms",
+    picUrl: WTK,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight",
+    picUrl: DBDL,
+  },
+  {
+    id: 4,
+    name: "Dead By Daylight Dead By Daylight Dead By Daylight Dead By Daylight",
+    picUrl: DBDL,
+  },
+];
+
 
 const ScrollContent = ({ Category }: ContentType) => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -42,7 +210,7 @@ const ScrollContent = ({ Category }: ContentType) => {
   } as React.CSSProperties;
 
   return (
-    <div className="relative main bg-[#33334499] p-8 shadow-md shadow-midnight-500 rounded-lg">
+    <div className="relative main mb-4 sm:mb-0 bg-midnight-600 bg-opacity-85 p-3 pb-0 sm:pb-8 sm:p-8 shadow-md shadow-midnight-500 rounded-lg">
       <header className="header">
         <h1
           style={dynamicStyles}
@@ -56,15 +224,12 @@ const ScrollContent = ({ Category }: ContentType) => {
         ref={scrollContainerRef}
         className="sm:no-scrollbar flex flex-row w-full h-40 sm:h-112 mb-4 sm:mb-0 py-2 pl-0 sm:pl-0 sm:p-12 overflow-x-scroll rounded-lg list box-border overflow-y-hidden"
       >
-        {Array.from({ length: 13 }).map((_, index) => (
-          <ScrollItem
-            key={index}
-            name={"Werewolf Ultimate"}
-            picUrl={"https://picsum.photos/200/300"}
-            short={"lorem"}
-            topic={""}
-          />
-        ))}
+        {data.map((game) => (
+        <Link key={game.id} to={`/boardgame/${game.id}`}>
+          <ScrollItem name={game.name} picUrl={game.picUrl} short={"lorem"}
+            topic={""}/>
+        </Link>
+       ))}
       </div>
       <button
         onMouseDown={() => setScrollingLeft(true)}

@@ -5,7 +5,7 @@ export default function LoginPage() {
     <>
       <div className="bg-orange-50">
         <HomeButtonOverlay />
-        <div className="w-[100vw] h-[calc(100dvh-48px)] flex justify-center items-center flex-col">
+        <div className="w-[100vw] h-[calc(100vh-48px)] flex justify-center items-center flex-col">
           <LoginForm />
         </div>
       </div>

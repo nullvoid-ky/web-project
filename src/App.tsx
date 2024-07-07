@@ -8,9 +8,10 @@ import RegisterPage from "./pages/RegisterPage";
 // import viteLogo from "/vite.svg";
 import "./App.css";
 import BoardgamePage from "./pages/BoardgamePage";
-import RoomPage from "./pages/RoomPage";
 import ProfilePage from "./pages/ProfilePage";
 import InsideGamePage from "./pages/InsideGamePage";
+import Dropdown from "./utils/Dropdown";
+import AboutPage from "./pages/AboutPage";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -23,10 +24,11 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-          <Route path="/room" element={<RoomPage />} />
           <Route path="/boardgame" element={<BoardgamePage />} />
-          <Route path="/boardgame/1" element={<InsideGamePage />} />
+          <Route path="/boardgame/:id" element={<InsideGamePage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/dropdown" element={<Dropdown />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
       {/* <div>

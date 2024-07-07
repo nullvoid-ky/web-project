@@ -11,7 +11,8 @@
     .item:hover{
         overflow-x: visible;
         transition: .4s;
-        transform: perspective(1000px) translateZ(px) translateY(-4px);
+        transform: perspective(1000px) translateZ(128px);
+        box-shadow: 0 2px 8px 0 #ffffff33;
     }
     
     /* .item:hover{
