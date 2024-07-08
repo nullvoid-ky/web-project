@@ -30,18 +30,18 @@ export default function BoardgameCard({ name, picUrl, e }: BoardgameCardType) {
           </div>
         </div>
       </div>
-      <div className="block sm:hidden">
-        <div className="flex bg-black h-36 max-w-40 rounded-lg">
+      <div className="flex justify-center sm:hidden">
+        <div className="flex bg-black h-36 w-[82vw] rounded-lg [&_.title]:active:text-pearl-50 [&_.title]:active:transfrom [&_.title]:active:translate-x-1 [&_.title]:active:duration-200 [&_.title]:duration-200 [&_.title]:active:delay-100 [&_.title]:active:text-sm">
           <img
             className=" w-full object-cover object-top rounded-lg "
             src={picUrl}
             alt=""
           />
-          <div className="absolute w-full max-w-[100px] h-36 bg-midnight-900 z-30 rounded-lg blur-right">
+          <div className="absolute w-[82vw] h-36 bg-midnight-900 z-30 rounded-lg blur-right">
           </div>
             
-          <div className="absolute text-[7px] mt-28 pl-1 z-40 pr-3 py-1 text-pearl-50  rounded-r-lg font-bold max-w-20 ">
-            <h1 className="text-ellipsis overflow-hidden text-nowrap">
+          <div className="absolute text-xs mt-28 pl-4 z-40 pr-3 py-1 text-pearl-700  rounded-r-lg font-bold max-w-44 ">
+            <h1 className="title text-ellipsis overflow-hidden text-nowrap">
               {name}
             </h1>
           </div>

@@ -91,21 +91,21 @@ export default function Nav() {
             </Link>
             <hr className="w-5/6  border-midnight-200" />
             <Link
-              to="boardgame"
+              to="/boardgame"
               className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
               Boardgame 
             </Link>
             <hr className="w-5/6  border-midnight-200" />
             <Link
-              to="about"
+              to="/about"
               className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
               Abouts
             </Link>
             <hr className="w-5/6  border-midnight-200" />
             <Link
-              to="login"
+              to="/login"
               className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
               Login
