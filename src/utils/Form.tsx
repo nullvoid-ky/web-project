@@ -47,8 +47,8 @@ export default function Form({
 
   return (
     <div
-      className={`flex flex-col bg-white rounded-xl px-8 pb-4 my-2 ${
-        isBlurredAndEmpty ? "border border-red-600" : ""
+      className={`flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2 ${
+        isBlurredAndEmpty ? "border border-red-200" : ""
       }`}
       style={{ boxSizing: "border-box" }}
     >

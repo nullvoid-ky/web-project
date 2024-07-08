@@ -10,7 +10,7 @@ export default function Nav() {
   return (
     <>
       <nav className="fixed top-0 flex h-12 w-full bg-midnight-800 z-[1000] lg:px-12 border-b-[1px] border-b-midnight-900 shadow-sm shadow-midnight-900">
-        <div className="flex w-2/5">
+        <div className="flex w-2/5 items-center pl-2">
           <div className="hidden lg:flex py-1 ml-4">
             <Link to="/" className="flex justify-center items-center">
               <img
@@ -19,6 +19,14 @@ export default function Nav() {
                 alt="logo"
               />
             </Link>
+          </div>
+          <div
+            onClick={handleClick}
+            className="flex flex-col bg-transparent w-8 h-8 rounded-md border-white border-[1px] justify-center items-center space-y-1 mr-2 hover:bg-midnight-900 cursor-pointer lg:hidden"
+          >
+            <div className="w-4 h-[2px] bg-white rounded-full "></div>
+            <div className="w-4 h-[2px] bg-white rounded-full "></div>
+            <div className="w-4 h-[2px] bg-white rounded-full "></div>
           </div>
         </div>
         <div className="flex w-1/5">
@@ -53,22 +61,59 @@ export default function Nav() {
               >
                 About
               </Link>
-              <Link
+              {/* <Link
                 to="/login"
-                className="hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4 text-pearl-50"
+                className=" hover:text-white text-orange-50 tranZ flex px-6 justify-center box-border p-4 text-pearl-50"
               >
                 Login
+              </Link> */}
+              <Link
+                to="/profile"
+                className="text-pearl-50 flex justify-center items-center box-border p-4"
+              >
+                <div className="flex items-center justify-center px-4">
+                  <div className="text-xs flex items-center justify-center  w-4 h-4 bg-green-600 rounded-full mx-2 ">
+                    ฿
+                  </div>
+                  <p className="text-pearl-400">20.00</p>
+                </div>
+                <div className="flex items-center justify-center px-4">
+                  <div className="text-xs flex items-center justify-center  w-4 h-4 bg-orange-500 rounded-full mx-2">
+                    P
+                  </div>
+                  <p className="text-orange-400">183</p>
+                </div>
+                <img
+                  src=""
+                  alt="a"
+                  className="w-8 h-8 rounded-full bg-pearl-50 "
+                />
               </Link>
             </ul>
           </div>
-          <div
-            onClick={handleClick}
-            className="flex flex-col bg-transparent w-8 h-8 rounded-md border-white border-[1px] justify-center items-center space-y-1 mr-2 hover:bg-midnight-900 cursor-pointer lg:hidden"
-          >
-            <div className="w-4 h-[2px] bg-white rounded-full "></div>
-            <div className="w-4 h-[2px] bg-white rounded-full "></div>
-            <div className="w-4 h-[2px] bg-white rounded-full "></div>
-          </div>
+          <Link
+                to="/profile"
+                className=" text-pearl-50 sm:flex lg:hidden justify-center items-center box-border p-4"
+              >
+                <div className="hidden sm:flex items-center justify-center px-4">
+                  <div className="text-xs flex items-center justify-center  w-4 h-4 bg-green-600 rounded-full mx-2 ">
+                    ฿
+                  </div>
+                  <p className="text-pearl-400">20.00</p>
+                </div>
+                <div className="hidden sm:flex items-center justify-center px-4">
+                  <div className="text-xs flex items-center justify-center  w-4 h-4 bg-orange-500 rounded-full mx-2">
+                    P
+                  </div>
+                  <p className="text-orange-400">183</p>
+                </div>
+                <img
+                  src=""
+                  alt="a"
+                  className="w-8 h-8 rounded-full bg-pearl-50 "
+                />
+              </Link>
+          
         </div>
       </nav>
 
@@ -86,7 +131,10 @@ export default function Nav() {
           }`}
         >
           <ul className=" flex flex-col w-full items-center  pt-6 h-full  ">
-            <Link to="/" className="flex w-full justify-center box-border p-4 text-pearl-50">
+            <Link
+              to="/"
+              className="flex w-full justify-center box-border p-4 text-pearl-50"
+            >
               Home
             </Link>
             <hr className="w-5/6  border-midnight-200" />
@@ -94,7 +142,7 @@ export default function Nav() {
               to="/boardgame"
               className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
-              Boardgame 
+              Boardgame
             </Link>
             <hr className="w-5/6  border-midnight-200" />
             <Link
@@ -104,11 +152,17 @@ export default function Nav() {
               Abouts
             </Link>
             <hr className="w-5/6  border-midnight-200" />
-            <Link
+            {/* <Link
               to="/login"
               className="flex w-full justify-center box-border p-4 text-pearl-50"
             >
               Login
+            </Link> */}
+            <Link
+              to="/profile"
+              className="flex w-full justify-center box-border p-4 text-pearl-50"
+            >
+              Profile
             </Link>
             <hr className="w-5/6  border-midnight-200" />
           </ul>

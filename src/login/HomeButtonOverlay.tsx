@@ -9,11 +9,11 @@ export default function HomeButtonOverlay() {
 
   return (
     <button
-      className="sticky top-4 left-4 rounded-[100%] w-12 h-12 z-10 flex justify-center items-center bg-orange-400 hover:bg-orange-500"
+      className="sticky top-4 left-4 rounded-[100%] w-6 h-6 sm:w-12 sm:h-12 z-10 flex justify-center items-center bg-orange-400 hover:bg-orange-500"
       onClick={handleClick}
     >
       <svg
-        className=" fill-white w-6 h-6 "
+        className=" fill-white w-3 h-3 sm:w-6 sm:h-6 "
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"

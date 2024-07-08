@@ -116,35 +116,19 @@
 
 // export default Dropdown;
 
-type DropdownType = {
+type InputDateType = {
   width: string;
 };
-export default function Dropdown({ width }: DropdownType) {
+export default function InputDate({ width }: InputDateType) {
   return (
-    <select
+    <input
+      placeholder=""
+      type="datetime-local"
+      required={true}
       className={`flex focus:outline-none 
-        text-xs lg:text-base 
-        h-6 ${width ? `${width}` : "w-full"} 
-        sm:h-10 px-3 sm:px-6 bg-opacity-40 bg-midnight-50 text-[6px] sm:text-lg text-pearl-50 focus:outline-1 focus:outline-pearl-800 focus:outline-double rounded-lg cursor-pointer hover:bg-midnight-300 active:bg-midnight-50 border-r-8 border-transparent`}
-    >
-      <option key={1} value={1}>
-        A
-      </option>
-      <option key={1} value={1}>
-        B
-      </option>
-      <option key={1} value={1}>
-        C
-      </option>
-      <option key={1} value={1}>
-        D
-      </option>
-      <option key={1} value={1}>
-        E
-      </option>
-      <option key={1} value={1}>
-        F
-      </option>
-    </select>
+          text-xs lg:text-base 
+          h-fit ${width ? `${width}` : "w-full"} py-2
+          sm:h-10 px-6 bg-opacity-40 bg-midnight-50 sm:text-lg text-pearl-50 focus:outline-1 focus:outline-pearl-800 focus:outline-double rounded-lg cursor-pointer hover:bg-midnight-300 active:bg-midnight-50 border-r-8 border-transparent`}
+    />
   );
 }
