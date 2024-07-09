@@ -5,8 +5,10 @@ type FormProps = {
   type: string;
   placeholder: string;
   required?: boolean;
+  maxLength: number;
   inputClass: string;
   labelClass: string;
+  contentClass: string;
   pClass: string;
   subtext: string;
   func: (event: React.ChangeEvent<HTMLInputElement>) => void;
@@ -17,15 +19,18 @@ export default function Form({
   required,
   inputClass,
   labelClass,
+  contentClass,
   pClass,
   subtext,
   type,
   func,
+  maxLength,
   ...props
 }: FormProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const labelRef = useRef<HTMLLabelElement>(null);
   const pRef = useRef<HTMLParagraphElement>(null);
+  const contentRef = useRef<HTMLParagraphElement>(null);
   const [isBlurredAndEmpty, setIsBlurredAndEmpty] = useState(false);
   const [inputValue, setInputValue] = useState("");
 
@@ -47,9 +52,8 @@ export default function Form({
 
   return (
     <div
-      className={`flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2 ${
-        isBlurredAndEmpty ? "border border-red-200" : ""
-      }`}
+    className={`${contentClass} ${isBlurredAndEmpty ? "border border-red-200" : ""}`}
+    ref={contentRef}
       style={{ boxSizing: "border-box" }}
     >
       <label className={labelClass} ref={labelRef}>
@@ -81,6 +85,7 @@ export default function Form({
           value={inputValue}
           onChange={handleChange}
           onBlur={handleBlur}
+          maxLength={maxLength}
         />
       )}
     </div>
