@@ -47,7 +47,8 @@ export default function ProfileSetting() {
             <div onClick={()=>handlePage(0)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Profile</div>
             <div onClick={()=>handlePage(1)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Point</div>
             <div onClick={()=>handlePage(2)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Transaction</div>
-            <div onClick={()=>handlePage(3)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Setting</div>
+            <div onClick={()=>handlePage(3)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Other</div>
+            <div  className="text-orange-400 flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Log Out</div>
           </nav>
         </div>
         <div className=" text-pearl-50 bg-midnight-700 bg-opacity-60 w-full h-[calc(100%-80px)] md:w-[calc(100%-240px)] md:h-full">

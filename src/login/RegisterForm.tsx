@@ -43,7 +43,7 @@ export default function RegisterForm() {
     <>
       <div className="flex flex-col h-full w-4/5 lg:w-200  rounded-xl">
         <div className="h-20 lg:h-40 bg-orange-700 rounded-xl my-4"></div>
-        <div className="bg-pearl-400  rounded-xl mb-2">
+        <div className="bg-pearl-200  rounded-xl mb-2">
           <div className=" rounded-t-lg h-2 w-full bg-orange-700"></div>
           <div className="flex flex-col p-8 py-4">
             <header className="text-3xl text-midnight-500">สมัครสมาชิก</header>
@@ -65,8 +65,8 @@ export default function RegisterForm() {
           type="text"
           placeholder="คำตอบของคุณ"
           required={true}
-          contentClass="flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2"
-          inputClass=" bg-pearl-400 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
+          contentClass="flex flex-col bg-pearl-200 rounded-xl px-8 pb-4 my-2"
+          inputClass=" bg-pearl-200 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-midnight-500 text-[18px] font-[700] mt-8"
           pClass="my-2 text-midnight-50 text-[14px]"
           func={(e) => setUsername(e.target.value)}
@@ -78,8 +78,8 @@ export default function RegisterForm() {
           type="email"
           placeholder="คำตอบของคุณ"
           required={true}
-          contentClass="flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2"
-          inputClass=" bg-pearl-400 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
+          contentClass="flex flex-col bg-pearl-200 rounded-xl px-8 pb-4 my-2"
+          inputClass=" bg-pearl-200 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-midnight-500 text-[18px] font-[700] mt-8"
           pClass="my-2 text-midnight-50 text-[14px]"
           func={(e) => setEmail(e.target.value)}
@@ -91,8 +91,8 @@ export default function RegisterForm() {
           type="password"
           placeholder="คำตอบของคุณ"
           required={true}
-          contentClass="flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2"
-          inputClass=" bg-pearl-400 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
+          contentClass="flex flex-col bg-pearl-200 rounded-xl px-8 pb-4 my-2"
+          inputClass=" bg-pearl-200 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-midnight-500 text-[18px] font-[700] mt-8"
           pClass="my-2 text-midnight-50 text-[14px]"
           func={(e) => setPassword(e.target.value)}
@@ -104,8 +104,8 @@ export default function RegisterForm() {
           type="password"
           placeholder="คำตอบของคุณ"
           required={true}
-          contentClass="flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2"
-          inputClass=" bg-pearl-400 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
+          contentClass="flex flex-col bg-pearl-200 rounded-xl px-8 pb-4 my-2"
+          inputClass=" bg-pearl-200 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-midnight-500 text-[18px] font-[700] mt-8"
           pClass="my-2 text-midnight-50 text-[14px]"
           func={(e) => setRePassword(e.target.value)}
@@ -117,8 +117,8 @@ export default function RegisterForm() {
           type="text"
           placeholder="คำตอบของคุณ"
           required={false}
-          contentClass="flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2"
-          inputClass=" bg-pearl-400 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
+          contentClass="flex flex-col bg-pearl-200 rounded-xl px-8 pb-4 my-2"
+          inputClass=" bg-pearl-200 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-midnight-500 text-[18px] font-[700] mt-8"
           pClass="my-2 text-midnight-50 text-[14px]"
           func={(e) => setDisplayName(e.target.value)}
@@ -130,8 +130,8 @@ export default function RegisterForm() {
           type="tel"
           placeholder="คำตอบของคุณ"
           required={false}
-          contentClass="flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2"
-          inputClass=" bg-pearl-400 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
+          contentClass="flex flex-col bg-pearl-200 rounded-xl px-8 pb-4 my-2"
+          inputClass=" bg-pearl-200 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-midnight-500 text-[18px] font-[700] mt-8"
           pClass="my-2 text-midnight-50 text-[14px]"
           func={(e) => setTel(e.target.value)}
@@ -143,8 +143,8 @@ export default function RegisterForm() {
           type="date"
           placeholder="คำตอบของคุณ"
           required={false}
-          contentClass="flex flex-col bg-pearl-400 rounded-xl px-8 pb-4 my-2"
-          inputClass=" bg-pearl-400 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
+          contentClass="flex flex-col bg-pearl-200 rounded-xl px-8 pb-4 my-2"
+          inputClass=" bg-pearl-200 justify-center w-4/5 lg:w-2/5 h-[44px] mb-4 px-2 border-[0px]  border-b-[1px] border-pearl-900 text-pearl-900 text-[16px] focus:border-b-2 pb-[1px] focus:pb-0 outline-none focus:border-orange-700 ease-in-out duration-75 "
           labelClass="text-midnight-500 text-[18px] font-[700] mt-8"
           pClass="my-2 text-midnight-50 text-[14px]"
           func={(e) => setBirthDate(e.target.value)}
