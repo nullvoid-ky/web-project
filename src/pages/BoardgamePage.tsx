@@ -5,6 +5,14 @@ import Werewolf from "../assets/Boardgames/Werewolf Ultimate/front.png";
 import Survive from "../assets/Boardgames/Survive/front.png";
 import WTK from "../assets/Boardgames/WTK War Of The Three Kingdoms/front.png";
 import DBDL from "../assets/Boardgames/Dead By Daylight/front.png";
+import Avalon from "../assets/Boardgames/Avalon/front.png";
+import Coup from "../assets/Boardgames/Coup/front.png";
+import GOT from "../assets/Boardgames/Game Of Thrones/front.png"
+import EXPKT from "../assets/Boardgames/Exploding Kitten/front.png"
+import MineTurtle from "../assets/Boardgames/Mine Turtle/front.png"
+import Splender from "../assets/Boardgames/Splender/front.png"
+import Muffin from "../assets/Boardgames/Muffin Time/front.png"
+
 import BoardgameContent from "../boardgame/BoardgameContent";
 import SearchBar from "../boardgame/SearchBar";
 
@@ -30,6 +38,40 @@ export default function BoardgamePage() {
       name: "Dead By Daylight",
       picUrl: DBDL,
     },{
+      id: 5,
+      name: "Avalon",
+      picUrl: Avalon,
+    },
+    {
+      id: 6,
+      name: "Coup",
+      picUrl: Coup,
+    },
+    {
+      id: 7,
+      name: "Game Of Thrones",
+      picUrl: GOT,
+    },
+    {
+      id: 8,
+      name: "Exploding Kitten",
+      picUrl: EXPKT,
+    },{
+      id: 9,
+      name: "Mine Turtle",
+      picUrl: MineTurtle,
+    },
+    {
+      id: 10,
+      name: "Splender",
+      picUrl: Splender,
+    },
+    {
+      id: 11,
+      name: "Muffin Time",
+      picUrl: Muffin,
+    },
+    {
       id: 1,
       name: "Werewolf Ultimate",
       picUrl: Werewolf,
@@ -49,6 +91,40 @@ export default function BoardgamePage() {
       name: "Dead By Daylight",
       picUrl: DBDL,
     },{
+      id: 5,
+      name: "Avalon",
+      picUrl: Avalon,
+    },
+    {
+      id: 6,
+      name: "Coup",
+      picUrl: Coup,
+    },
+    {
+      id: 7,
+      name: "Game Of Thrones",
+      picUrl: GOT,
+    },
+    {
+      id: 8,
+      name: "Exploding Kitten",
+      picUrl: EXPKT,
+    },{
+      id: 9,
+      name: "Mine Turtle",
+      picUrl: MineTurtle,
+    },
+    {
+      id: 10,
+      name: "Splender",
+      picUrl: Splender,
+    },
+    {
+      id: 11,
+      name: "Muffin Time",
+      picUrl: Muffin,
+    },
+    {
       id: 1,
       name: "Werewolf Ultimate",
       picUrl: Werewolf,
@@ -68,6 +144,40 @@ export default function BoardgamePage() {
       name: "Dead By Daylight",
       picUrl: DBDL,
     },{
+      id: 5,
+      name: "Avalon",
+      picUrl: Avalon,
+    },
+    {
+      id: 6,
+      name: "Coup",
+      picUrl: Coup,
+    },
+    {
+      id: 7,
+      name: "Game Of Thrones",
+      picUrl: GOT,
+    },
+    {
+      id: 8,
+      name: "Exploding Kitten",
+      picUrl: EXPKT,
+    },{
+      id: 9,
+      name: "Mine Turtle",
+      picUrl: MineTurtle,
+    },
+    {
+      id: 10,
+      name: "Splender",
+      picUrl: Splender,
+    },
+    {
+      id: 11,
+      name: "Muffin Time",
+      picUrl: Muffin,
+    },
+    {
       id: 1,
       name: "Werewolf Ultimate",
       picUrl: Werewolf,
@@ -87,6 +197,40 @@ export default function BoardgamePage() {
       name: "Dead By Daylight",
       picUrl: DBDL,
     },{
+      id: 5,
+      name: "Avalon",
+      picUrl: Avalon,
+    },
+    {
+      id: 6,
+      name: "Coup",
+      picUrl: Coup,
+    },
+    {
+      id: 7,
+      name: "Game Of Thrones",
+      picUrl: GOT,
+    },
+    {
+      id: 8,
+      name: "Exploding Kitten",
+      picUrl: EXPKT,
+    },{
+      id: 9,
+      name: "Mine Turtle",
+      picUrl: MineTurtle,
+    },
+    {
+      id: 10,
+      name: "Splender",
+      picUrl: Splender,
+    },
+    {
+      id: 11,
+      name: "Muffin Time",
+      picUrl: Muffin,
+    },
+    {
       id: 1,
       name: "Werewolf Ultimate",
       picUrl: Werewolf,
@@ -105,72 +249,41 @@ export default function BoardgamePage() {
       id: 4,
       name: "Dead By Daylight",
       picUrl: DBDL,
+    },{
+      id: 5,
+      name: "Avalon",
+      picUrl: Avalon,
     },
     {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
+      id: 6,
+      name: "Coup",
+      picUrl: Coup,
     },
     {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
+      id: 7,
+      name: "Game Of Thrones",
+      picUrl: GOT,
     },
     {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
+      id: 8,
+      name: "Exploding Kitten",
+      picUrl: EXPKT,
+    },{
+      id: 9,
+      name: "Mine Turtle",
+      picUrl: MineTurtle,
     },
     {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
+      id: 10,
+      name: "Splender",
+      picUrl: Splender,
     },
     {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
+      id: 11,
+      name: "Muffin Time",
+      picUrl: Muffin,
     },
-    {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
-    },
-    {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
-    },
-    {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
-    },
-    {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
-    },
-    {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
-    },
-    {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
-    },
-    {
-      id: 4,
-      name: "Dead By Daylight",
-      picUrl: DBDL,
-    },
-    {
-      id: 4,
-      name: "Dead By Daylight Dead By Daylight Dead By Daylight Dead By Daylight",
-      picUrl: DBDL,
-    },
+    
   ];
 
   return (
