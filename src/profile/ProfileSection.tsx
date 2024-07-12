@@ -1,94 +1,84 @@
 import { useState } from "react";
-import Form from "../utils/Form";
+import EditObject from "./EditObject";
 export default function ProfileSection() {
   const [isEdit, setIsEdit] = useState(false);
   function handleEdit() {
     setIsEdit(!isEdit);
   }
-  ("");
   return (
     <div className="text-pearl-50">
       <div className="flex justify-end p-4 pb-1">
         <button
           onClick={handleEdit}
-          className={`sticky px-4 py-1 rounded-xl ${
-            isEdit
-              ? "bg-pearl-50 text-orange-500"
-              : "bg-orange-500 text-pearl-50"
+          className={`sticky px-4 py-1 mr-2 rounded-xl text-orange-500 bg-pearl-50 ${
+            isEdit ? "flex" : "hidden"
           }`}
+        >
+          Cancel
+        </button>
+
+        <button
+          onClick={handleEdit}
+          className={`sticky px-4 py-1 rounded-xl bg-orange-500 text-pearl-50 `}
         >
           {isEdit ? "Save" : "Edit"}
         </button>
       </div>
-      <div className="flex flex-col p-16 pt-0 text-xl">
-      <div className="mb-4">
-          <Form
-            label="ชื่อแสดงผล"
-            subtext=""
-            type="text"
-            placeholder=">"
-            required={false}
-            inputClass={`w-4/5 xl:w-96 placeholder:absolute placeholder:left-0 pl-3  focus:outline-none box-border border-b-[1px] bg-transparent placeholder:text-pearl-700 text-[10px] sm:text-xs lg:text-xl  ${
-              isEdit ? "flex" : "hidden"
-            }`}
-            labelClass="text-orange-500 text-base sm:text-lg lg:text-3xl"
-            pClass=""
-            func={(e) => setUsername(e.target.value)}
-          />
-          <h1
-            className={`border-b-[1px] border-transparent text-[10px] sm:text-xs lg:text-xl ${
-              isEdit ? "hidden" : "flex"
-            }`}
-          >
-            Thanatchaya Toom-ariya
-          </h1>
-        </div>
-        <div className="mb-4">
-          <Form
-            maxLength={25}
-            label="ชื่อแสดงผล"
-            subtext=""
-            type="text"
-            placeholder=">"
-            required={false}
-            inputClass={`w-4/5 xl:w-96 placeholder:absolute placeholder:left-0 pl-3  focus:outline-none box-border border-b-[1px] bg-transparent placeholder:text-pearl-700 text-[10px] sm:text-xs lg:text-xl  ${
-              isEdit ? "flex" : "hidden"
-            }`}
-            labelClass="text-orange-500 text-base sm:text-lg lg:text-3xl"
-            pClass=""
-            func={(e) => setUsername(e.target.value)}
-          />
-          <h1
-            className={`border-b-[1px] border-transparent text-[10px] sm:text-xs lg:text-xl ${
-              isEdit ? "hidden" : "flex"
-            }`}
-          >
-            Thanatchaya Toom-ariya
-          </h1>
-        </div>
-        <div className="mb-4">
-          <Form
-            label="ชื่อแสดงผล"
-            subtext=""
-            type="text"
-            placeholder=">"
-            required={false}
-            maxLength=""
-            inputClass={`w-4/5 xl:w-96 placeholder:absolute placeholder:left-0 pl-3  focus:outline-none box-border border-b-[1px] bg-transparent placeholder:text-pearl-700 text-[10px] sm:text-xs lg:text-xl  ${
-              isEdit ? "flex" : "hidden"
-            }`}
-            labelClass="text-orange-500 text-base sm:text-lg lg:text-3xl"
-            pClass=""
-            func={(e) => setUsername(e.target.value)}
-          />
-          <h1
-            className={`border-b-[1px] border-transparent text-[10px] sm:text-xs lg:text-xl ${
-              isEdit ? "hidden" : "flex"
-            }`}
-          >
-            Thanatchaya Toom-ariya
-          </h1>
-        </div>
+      <div className="flex flex-col p-16 pt-0 text-xl overflow-y-scroll ">
+      <EditObject
+          topic="ชื่อแสดงผล"
+          value="Thanatchaya Toom-ariya"
+          isEdit={isEdit}
+          type="text"
+        />
+         <EditObject
+          topic="ชื่อแสดงผล"
+          value="Thanatchaya Toom-ariya"
+          isEdit={isEdit}
+          type="text"
+        />
+         <EditObject
+          topic="ชื่อแสดงผล"
+          value="Thanatchaya Toom-ariya"
+          isEdit={isEdit}
+          type="text"
+        />
+         <EditObject
+          topic="ชื่อแสดงผล"
+          value="Thanatchaya Toom-ariya"
+          isEdit={isEdit}
+          type="text"
+        />
+         <EditObject
+          topic="ชื่อแสดงผล"
+          value="Thanatchaya Toom-ariya"
+          isEdit={isEdit}
+          type="text"
+        />
+        <EditObject
+          topic="เบอร์โทร"
+          value="0614019599"
+          isEdit={isEdit}
+          type="tel"
+        />
+        <EditObject
+          topic="เบอร์โทร"
+          value="0614019599"
+          isEdit={isEdit}
+          type="tel"
+        />
+        <EditObject
+          topic="เบอร์โทร"
+          value="0614019599"
+          isEdit={isEdit}
+          type="tel"
+        />
+        <EditObject
+          topic="วันเกิด"
+          value="15/10/2004"
+          isEdit={isEdit}
+          type="date"
+        />
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ type FormProps = {
   contentClass: string;
   pClass: string;
   subtext: string;
+  oldValue: string;
   func: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -25,6 +26,7 @@ export default function Form({
   type,
   func,
   maxLength,
+  oldValue,
   ...props
 }: FormProps) {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -32,8 +34,7 @@ export default function Form({
   const pRef = useRef<HTMLParagraphElement>(null);
   const contentRef = useRef<HTMLParagraphElement>(null);
   const [isBlurredAndEmpty, setIsBlurredAndEmpty] = useState(false);
-  const [inputValue, setInputValue] = useState("");
-
+  const [inputValue, setInputValue] = useState(oldValue ? oldValue : "");
   const handleBlur = () => {
     if (required && inputValue === "") {
       setIsBlurredAndEmpty(true);
@@ -52,8 +53,10 @@ export default function Form({
 
   return (
     <div
-    className={`${contentClass} ${isBlurredAndEmpty ? "border border-red-200" : ""}`}
-    ref={contentRef}
+      className={`${contentClass} ${
+        isBlurredAndEmpty ? "border-2 border-red-600" : ""
+      }`}
+      ref={contentRef}
       style={{ boxSizing: "border-box" }}
     >
       <label className={labelClass} ref={labelRef}>

@@ -33,15 +33,15 @@ export default function ProfileSetting() {
   }
   return (
     <>
-      <div className="flex flex-col md:flex-row h-160 xl:h-[1000px] 2xl:h-[1200px] bg-midnight-600  shadow-md shadow-midnight-900 bg-opacity-85">
-        <div className="flex flex-row md:flex-col h-20 md:h-full md:w-60 lg:w-80 xl:w-144 2xl:w-200 bg-midnight-600 text-pearl-50 shadow-md shadow-midnight-900 bg-opacity-85">
-          <div className="hidden md:flex flex-col h-48 items-center justify-center my-4">
+      <div className="flex flex-col md:flex-row h-[480px] xl:h-[500px] 2xl:h-[600px] bg-midnight-600  shadow-md shadow-midnight-900 bg-opacity-85">
+        <div className="items-center justify-evenly  flex flex-row md:flex-col  h-20 md:h-full md:w-60 lg:w-80 xl:w-144 2xl:w-200 bg-midnight-600 text-pearl-50 shadow-md shadow-midnight-900 bg-opacity-85">
+          <div className="hidden md:flex flex-col h-48 items-center justify-center my-4 xl:mt-2">
             <img src="" alt="" className="h-32 w-32 lg:bg-yellow-500 bg-red-300 rounded-full" />
             <h2 className="text-sm md:text-base lg:text-xl xl:text-3xl font-bold my-2">Thanatchaya Toom-ariya</h2>
             {/* 25char limits */}
           </div>
           <nav
-            className="text-sm md:text-base lg:text-lg xl:text-2xl  flex w-full h-full md:pl-4 md:pt-4 xl:pt-0 items-center md:items-start flex-row md:flex-col justify-around md:justify-start
+            className="text-sm md:text-base lg:text-lg xl:text-xl  flex w-full h-fit md:pl-4 md:pt-4 xl:pt-0 items-center md:items-start flex-row md:flex-col justify-around md:justify-start
           "
           >
             <div onClick={()=>handlePage(0)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Profile</div>
@@ -51,7 +51,7 @@ export default function ProfileSetting() {
             <div  className="text-orange-400 flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Log Out</div>
           </nav>
         </div>
-        <div className=" text-pearl-50 bg-midnight-700 bg-opacity-60 w-full h-[calc(100%-80px)] md:w-[calc(100%-240px)] md:h-full">
+        <div className=" text-pearl-50 bg-midnight-300 bg-opacity-40 w-full h-[calc(100%-80px)] md:w-[calc(100%-240px)] md:h-full overflow-y-scroll ">
           <Component />
         </div>
       </div>
