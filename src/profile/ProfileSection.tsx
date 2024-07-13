@@ -6,7 +6,7 @@ export default function ProfileSection() {
     setIsEdit(!isEdit);
   }
   return (
-    <div className="text-pearl-50">
+    <div className="text-pearl-50 overflow-y-hidden">
       <div className="flex justify-end p-4 pb-1">
         <button
           onClick={handleEdit}
@@ -24,7 +24,7 @@ export default function ProfileSection() {
           {isEdit ? "Save" : "Edit"}
         </button>
       </div>
-      <div className="flex flex-col p-16 pt-0 text-xl overflow-y-scroll ">
+      <div className="flex flex-col p-16 pt-0 text-xl overflow-y-hidden ">
       <EditObject
           topic="ชื่อแสดงผล"
           value="Thanatchaya Toom-ariya"

@@ -3,7 +3,7 @@ import "./ProfileSetting.css";
 import { useState } from "react";
 import TransactionSection from "./TransactionSection";
 import PointSection from "./PointSection";
-import SettingSection from "./SettingSection";
+import BookSection from "./BookSection";
 export default function ProfileSetting() {
   const [isPic, setIsPic] = useState(false);
   const [page, setPage] = useState(0);
@@ -23,10 +23,10 @@ export default function ProfileSetting() {
       Component = PointSection;
       break;
     case 2:
-      Component = TransactionSection;
+      Component = BookSection;
       break;
     case 3:
-      Component = SettingSection;
+      Component = TransactionSection;
       break;
     default:
       Component = ProfileSection;
@@ -46,8 +46,8 @@ export default function ProfileSetting() {
           >
             <div onClick={()=>handlePage(0)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Profile</div>
             <div onClick={()=>handlePage(1)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Point</div>
-            <div onClick={()=>handlePage(2)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Transaction</div>
-            <div onClick={()=>handlePage(3)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Other</div>
+            <div onClick={()=>handlePage(2)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Book</div>
+            <div onClick={()=>handlePage(3)} className="flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Transaction</div>
             <div  className="text-orange-400 flex nav-item justify-center items-center h-full md:h-12 w-1/4 md:w-full ">Log Out</div>
           </nav>
         </div>
