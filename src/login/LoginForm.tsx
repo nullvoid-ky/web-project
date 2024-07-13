@@ -44,7 +44,7 @@ export default function LoginForm() {
             onChange={(e) => setUsername(e.target.value)}
           />
           <input
-            className="mb-1 sm:mb-2 rounded-sm w-96 text-xs max-w-64 sm:max-w-none sm:text-sm py-3 px-2 bg-midnight-900"
+            className="mb-1 sm:mb-8 rounded-sm w-96 text-xs max-w-64 sm:max-w-none sm:text-sm py-3 px-2 bg-midnight-900"
             type="password"
             name="password"
             placeholder="รหัสผ่าน"

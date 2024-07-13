@@ -7,7 +7,8 @@ export default function LoginPage() {
       <div className="">
         <div className="">
           <Background />
-        </div>
+          <div className="inset-0 fixed z-[-1] bg-orange-500 bg-opacity-20 w-screen h-screen"></div>
+          </div>
         <HomeButtonOverlay />
         <div className="w-[100vw] h-[calc(100vh-48px)] flex justify-center items-center flex-col">
           <LoginForm />

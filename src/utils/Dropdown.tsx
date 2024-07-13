@@ -117,15 +117,17 @@
 // export default Dropdown;
 
 type DropdownType = {
+  height: string;
   width: string;
 };
-export default function Dropdown({ width }: DropdownType) {
+export default function Dropdown({ height, width }: DropdownType) {
   return (
     <select
       className={`flex focus:outline-none 
         text-xs lg:text-base 
-        h-6 ${width ? `${width}` : "w-full"} 
-        sm:h-10 px-3 sm:px-6 bg-opacity-40 bg-midnight-50 text-[6px] sm:text-lg text-pearl-50 focus:outline-1 focus:outline-pearl-800 focus:outline-double rounded-lg cursor-pointer hover:bg-midnight-300 active:bg-midnight-50 border-r-8 border-transparent`}
+        ${height ? `${height}` : "h-6 sm:h-10"} 
+        ${width ? `${width}` : "w-full"} 
+         px-3 sm:px-6 bg-opacity-40 bg-midnight-50 text-[6px] sm:text-lg text-pearl-50 focus:outline-1 focus:outline-pearl-800 focus:outline-double rounded-lg cursor-pointer hover:bg-midnight-300 active:bg-midnight-50 border-r-8 border-transparent`}
     >
       <option key={1} value={1}>
         A

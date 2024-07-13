@@ -9,7 +9,7 @@ export default function Background() {
         .forEach((layer) => {
           const depth = layer.getAttribute("data-depth");
           if (depth) {
-            const movement = -(scrollPosition * parseFloat(depth));
+            const movement = -(scrollPosition * parseFloat(depth) * 2);
             const translate3d = `translate3d(0, ${movement}px, 0)`;
             layer.style.transform = translate3d;
           }
@@ -25,7 +25,7 @@ export default function Background() {
 
   return (
     <>
-      <div className="parallax fixed inset-0 w-[100vw] h-[100%] overflow-hidden -z-10 linear">
+      <div className=" fixed inset-0 w-[100vw] h-[100vh] overflow-hidden -z-10 linear">
         <div className="parallax__layer parallax__layer--back" data-depth="0.1">
           <div className="absolute w-[100vw] h-[100vh] overflow-hidden ">
             <div className="box">

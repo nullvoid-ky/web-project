@@ -24,8 +24,8 @@ export default function ProfileSection() {
           {isEdit ? "Save" : "Edit"}
         </button>
       </div>
-      <div className="flex flex-col p-16 pt-0 text-xl overflow-y-hidden ">
-      <EditObject
+      <div className="grid grid-cols-1 xl:grid-cols-2  p-16 pt-0 text-xl overflow-y-hidden ">
+        <EditObject
           topic="ชื่อแสดงผล"
           value="Thanatchaya Toom-ariya"
           isEdit={isEdit}
@@ -71,14 +71,29 @@ export default function ProfileSection() {
           topic="เบอร์โทร"
           value="0614019599"
           isEdit={isEdit}
-          type="tel"
+          type="dropdown"
         />
         <EditObject
           topic="วันเกิด"
           value="15/10/2004"
           isEdit={isEdit}
           type="date"
-        />
+        /><EditObject
+        topic="วันเกิด"
+        value="15/10/2004"
+        isEdit={isEdit}
+        type="date"
+      /><EditObject
+      topic="วันเกิด"
+      value="15/10/2004"
+      isEdit={isEdit}
+      type="date"
+    /><EditObject
+    topic="วันเกิด"
+    value="15/10/2004"
+    isEdit={isEdit}
+    type="date"
+  />
       </div>
     </div>
   );

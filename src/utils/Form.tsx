@@ -52,9 +52,10 @@ export default function Form({
   };
 
   return (
+    <div className="overflow-x-hidden">
     <div
       className={`${contentClass} ${
-        isBlurredAndEmpty ? "border-2 border-red-600" : ""
+        isBlurredAndEmpty ? "border-2 border-rose-600" : ""
       }`}
       ref={contentRef}
       style={{ boxSizing: "border-box" }}
@@ -91,6 +92,7 @@ export default function Form({
           maxLength={maxLength}
         />
       )}
+    </div>
     </div>
   );
 }

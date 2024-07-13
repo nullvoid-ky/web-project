@@ -5,7 +5,8 @@ export default function RegisterPage() {
   return (
     <>
           <Background />
-      <div className="w-[100vw] h-full pt-4 ">
+          <div className="inset-0 fixed z-[-1] bg-orange-500 bg-opacity-20 w-screen h-screen"></div>
+      <div className="h-full pt-4 ">
         <HomeButtonOverlay />
         <div className="flex items-center flex-col">
           <RegisterForm />

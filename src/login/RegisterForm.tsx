@@ -3,6 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Form from "../utils/Form";
+import "./Login.css"
 // use State สำหรับเปลี่ยนค่าที่เกิดขึ้นทันทีในเว็บ
 
 export default function RegisterForm() {
@@ -41,7 +42,7 @@ export default function RegisterForm() {
   }
   return (
     <>
-      <div className="flex flex-col h-full w-4/5 lg:w-200  rounded-xl">
+      <div className="flex flex-col h-full w-4/5 lg:w-200  rounded-xl ">
         <div className="h-20 lg:h-40 bg-orange-700 rounded-xl my-4"></div>
         <div className="bg-pearl-200  rounded-xl mb-2">
           <div className=" rounded-t-lg h-2 w-full bg-orange-700"></div>
@@ -163,7 +164,7 @@ export default function RegisterForm() {
           </button>
         </div>
         <footer className="flex flex-col h-full mb-8">
-          <div className="text-pearl-800 w-full h-4 text-[12px] my-4">
+          <div className="text-pearl-800  h-4 text-[12px] my-4">
             ห้ามส่งรหัสผ่านใช้งานจริงใน Kanyok Form
           </div>
           <div className="flex justify-center text-pearl-800 w-full h-4 text-[10px] lg:text-[12px] my-2">
