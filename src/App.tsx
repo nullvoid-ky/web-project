@@ -10,8 +10,8 @@ import "./App.css";
 import BoardgamePage from "./pages/BoardgamePage";
 import ProfilePage from "./pages/ProfilePage";
 import InsideGamePage from "./pages/InsideGamePage";
-import Dropdown from "./utils/Dropdown";
 import AboutPage from "./pages/AboutPage";
+import DataPage from "./pages/DataPage";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -27,7 +27,7 @@ function App() {
           <Route path="/boardgame" element={<BoardgamePage />} />
           <Route path="/boardgame/:id" element={<InsideGamePage />} />
           <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/dropdown" element={<Dropdown />} />
+          <Route path="/data" element={<DataPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </BrowserRouter>
