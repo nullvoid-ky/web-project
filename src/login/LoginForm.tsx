@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"
+import "./Login.css";
 
 export default function LoginForm() {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ export default function LoginForm() {
   async function handleSubmit() {
     try {
       await axios
-        .post("http://localhost:8080/api/auth/login", {
+        .post("http://localhost:5000/api/auth/login", {
           username: username,
           password: password,
           // username.
@@ -29,7 +29,6 @@ export default function LoginForm() {
       console.log(error);
     }
   }
-
   return (
     <>
       <div className="flex flex-col  text-pearl-50   h-screen text-xs sm:text-sm justify-center rounded-3xl mb-2 sm:mb-12">
@@ -51,20 +50,32 @@ export default function LoginForm() {
             id=""
             onChange={(e) => setPassword(e.target.value)}
           />
-          <button className="mb-2 sm:mb-4 hover:bg-orange-700 max-w-64 sm:max-w-none  bg-orange-500 rounded-sm w-96 text-sm px-1 py-[1px] sm:text-sm sm:py-1 sm:px-2" type="submit" onClick={handleSubmit}>
+          <button
+            className="mb-2 sm:mb-4 hover:bg-orange-700 max-w-64 sm:max-w-none  bg-orange-500 rounded-sm w-96 text-sm px-1 py-[1px] sm:text-sm sm:py-1 sm:px-2"
+            type="submit"
+            onClick={handleSubmit}
+          >
             ล็อคอิน
           </button>
         </div>
-        
+
         <div className="mb-4 flex flex-row-reverse max-w-64 sm:max-w-none  items-center text-xs sm:text-sm">
-          <a className="cursor-pointer  underline text-orange-500 hover:text-orange-700" type="button" onClick={handleClick}>
+          <a
+            className="cursor-pointer  underline text-orange-500 hover:text-orange-700"
+            type="button"
+            onClick={handleClick}
+          >
             ลืมรหัสผ่าน
           </a>
         </div>
 
         <div className="flex flex-row max-w-64 sm:max-w-none justify-center items-center text-xs sm:text-sm">
           <span className="mr-2 text-pearl-500">ไม่มีแอคเคาท์ ?</span>
-          <a className="cursor-pointer underline text-orange-500 hover:text-orange-700" type="button" onClick={handleClick}>
+          <a
+            className="cursor-pointer underline text-orange-500 hover:text-orange-700"
+            type="button"
+            onClick={handleClick}
+          >
             สมัครสมาชิก
           </a>
         </div>
