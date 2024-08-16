@@ -1,0 +1,79 @@
+@media (min-width: 640px) {
+    .item{
+        transform-style: preserve-3d;
+        transform: perspective(1000px);
+        cursor: pointer;
+        transition: transform 0.6s;
+        transition: .6s;
+        overflow-y: hidden;
+    
+    }
+    .item:hover{
+        overflow-x: visible;
+        transition: .4s;
+        transform: perspective(1000px) translateZ(128px);
+        box-shadow: 0 2px 8px 0 #ffffff33;
+    }
+    
+    /* .item:hover{
+        z-index: 100;
+        height: 360px;
+        border-radius: 8px;
+        max-height: 600px;
+    }
+    .list .item:hover{
+        z-index: 100;
+        transition: .4s;
+        height: 360px;
+        border-radius: 8px;
+        max-height: 600px;
+    } */
+/*     
+    .list .item .box p {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease-in-out 1s, visibility .2s; 
+    
+    }
+    
+    .list .item:hover .box p {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.4s 0.2s; 
+    }
+    
+     */
+    
+    /* 
+    .item:hover + *{
+        transition: .5s;
+        transform: perspective(1000px) translateZ(-50px);
+    }
+    
+    .item:hover + * + *{
+        transition: .5s;
+        transform: perspective(1000px) translateZ(-50px);
+    }
+    
+    .item:has(+ *:hover){
+        transition: .5s;
+        transform: perspective(1000px) translateZ(-50px);
+    }
+        
+    
+    .item:has(+ * + *:hover){
+        transition: .5s;
+        transform: perspective(1000px) translateZ(-50px);
+    }
+         */
+
+}
+/* 
+@media (max-width: 640px) {
+    
+}
+.item .box p {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out 1s, visibility .2s;
+} */

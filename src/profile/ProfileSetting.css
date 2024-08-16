@@ -1,0 +1,25 @@
+
+
+.nav-item{
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  cursor: pointer;
+  transition: transform 0.6s;
+  transition: .6s;
+  overflow-y: hidden;
+
+}
+.nav-item:hover{
+  transform: perspective(1000px) translateZ(12px) translateX(12px);
+  text-decoration: underline;
+  transition: .6s;
+}
+
+@media (max-width: 768px) {
+  
+.nav-item:hover{
+  transform: perspective(1000px) translateZ(12px) translateY(-4px);
+  text-decoration: underline;
+  transition: .6s;
+}
+}

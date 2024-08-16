@@ -1,0 +1,20 @@
+Link:hover{
+    color:brown;
+}
+
+
+.tranZ{
+    cursor: pointer;
+    transition: transform 0.6s;
+    transition: .6s;
+    overflow-y: hidden;
+
+}
+.tranZ:hover{
+    transition: .4s;
+    font-size:larger;
+}
+
+.flex-2{
+    flex: 2;
+}
