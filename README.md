@@ -1,4 +1,9 @@
-# React + TypeScript + Vite
+# Web project 2024
+
+not finish yet but i hope i will finish this soon
+
+
+React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
